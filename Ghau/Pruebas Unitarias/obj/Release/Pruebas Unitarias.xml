@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PruebasUnitarias
+</name>
+</assembly>
+<members>
+<member name="P:Pruebas_Unitarias.EventosTest.TestContext">
+	<summary>
+Obtiene o establece el contexto de la prueba que proporciona
+la información y funcionalidad para la ejecución de pruebas actual.
+</summary>
+</member><member name="M:Pruebas_Unitarias.EventosTest.ingreso_eventoTest">
+	<summary>
+Una prueba de ingreso_evento
+</summary>
+</member><member name="T:Pruebas_Unitarias.EventosTest">
+	<summary>
+Se trata de una clase de prueba para EventosTest y se pretende que
+contenga todas las pruebas unitarias EventosTest.
+</summary>
+</member>
+</members>
+</doc>

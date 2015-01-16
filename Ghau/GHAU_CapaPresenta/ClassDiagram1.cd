@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GHAU_CapaPresenta.Mantenedor_Programas">
+    <Position X="2" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIECAIEAAAMAjAAAACAAAAEAAgAAUAAAAEAAA=</HashCode>
+      <FileName>Mantenedor_Programas.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GHAU_CapaPresenta.Mantenedor_Unidades_Academicas">
+    <Position X="4.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQIECAIEAAAAAjAAAACAAAAEAAgAAUBAAAEAAA=</HashCode>
+      <FileName>Mantenedor_Unidades_Academicas.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GHAU_CapaNegocio.Negocio">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GHAU_CapaDatos.MantenedorBD">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

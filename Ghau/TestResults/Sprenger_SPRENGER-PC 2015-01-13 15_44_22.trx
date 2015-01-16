@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2699fa47-8b90-4e7e-9c59-73a943dc6fbb" name="Sprenger@SPRENGER-PC 2015-01-13 15:44:22" runUser="Sprenger-PC\Sprenger" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Ejecución de pruebas local" id="36892c21-a994-4aa5-9de0-3d11072462b5">
+    <Description>Configuración de ejecución de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment runDeploymentRoot="C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestResults\Sprenger_SPRENGER-PC 2015-01-13 15_44_22">
+      <DeploymentItem filename="C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\bin\Release\GHAU_CapaDatos.dll" />
+      <DeploymentItem filename="C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaNegocio\bin\Release\GHAU_CapaNegocio.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2015-01-13T15:44:22.9563011-03:00" queuing="2015-01-13T15:44:26.6575128-03:00" start="2015-01-13T15:44:26.9335286-03:00" finish="2015-01-13T15:44:27.8285797-03:00" />
+  <TestDefinitions>
+    <UnitTest name="modularizacionTest" storage="c:\users\sprenger\dropbox\taller ii\hans molina fleming\verano2015\ghau\hans\testproject1\bin\release\testproject1.dll" id="d90d9c01-a388-00ed-3a2c-4a3849298f26">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="6f258bd1-9a23-4442-ba93-ae0135be8bd2" />
+      <TestMethod codeBase="C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\bin\Release\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.funcionesTest, TestProject1" name="modularizacionTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="d90d9c01-a388-00ed-3a2c-4a3849298f26" executionId="6f258bd1-9a23-4442-ba93-ae0135be8bd2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6f258bd1-9a23-4442-ba93-ae0135be8bd2" testId="d90d9c01-a388-00ed-3a2c-4a3849298f26" testName="modularizacionTest" computerName="SPRENGER-PC" duration="00:00:00.1723088" startTime="2015-01-13T15:44:27.1325399-03:00" endTime="2015-01-13T15:44:27.7275740-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. Compruebe la exactitud de este método de prueba.</Message>
+          <StackTrace>   en TestProject1.funcionesTest.modularizacionTest() en C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\funcionesTest.vb:línea 70
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

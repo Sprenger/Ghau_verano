@@ -1,0 +1,13 @@
+C:\GHAU\GHAU\Pruebas Unitarias\bin\Release\Pruebas Unitarias.dll
+C:\GHAU\GHAU\Pruebas Unitarias\bin\Release\Pruebas Unitarias.pdb
+C:\GHAU\GHAU\Pruebas Unitarias\bin\Release\Pruebas Unitarias.xml
+C:\GHAU\GHAU\Pruebas Unitarias\bin\Release\GHAU_CapaDatos.dll
+C:\GHAU\GHAU\Pruebas Unitarias\bin\Release\GHAU_CapaNegocio.dll
+C:\GHAU\GHAU\Pruebas Unitarias\bin\Release\GHAU_CapaNegocio.pdb
+C:\GHAU\GHAU\Pruebas Unitarias\bin\Release\GHAU_CapaNegocio.xml
+C:\GHAU\GHAU\Pruebas Unitarias\bin\Release\GHAU_CapaDatos.pdb
+C:\GHAU\GHAU\Pruebas Unitarias\bin\Release\GHAU_CapaDatos.xml
+C:\GHAU\GHAU\Pruebas Unitarias\obj\Release\ResolveAssemblyReference.cache
+C:\GHAU\GHAU\Pruebas Unitarias\obj\Release\Pruebas Unitarias.dll
+C:\GHAU\GHAU\Pruebas Unitarias\obj\Release\Pruebas Unitarias.xml
+C:\GHAU\GHAU\Pruebas Unitarias\obj\Release\Pruebas Unitarias.pdb

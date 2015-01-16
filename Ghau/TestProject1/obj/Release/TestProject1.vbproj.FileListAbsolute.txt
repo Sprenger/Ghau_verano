@@ -1,0 +1,39 @@
+C:\GHAU\GHAU\TestProject1\obj\Release\ResolveAssemblyReference.cache
+C:\GHAU\GHAU\TestProject1\bin\Release\TestProject1.dll
+C:\GHAU\GHAU\TestProject1\bin\Release\TestProject1.pdb
+C:\GHAU\GHAU\TestProject1\bin\Release\TestProject1.xml
+C:\GHAU\GHAU\TestProject1\bin\Release\GHAU_CapaDatos.dll
+C:\GHAU\GHAU\TestProject1\bin\Release\GHAU_CapaNegocio.dll
+C:\GHAU\GHAU\TestProject1\bin\Release\GHAU_CapaNegocio.pdb
+C:\GHAU\GHAU\TestProject1\bin\Release\GHAU_CapaNegocio.xml
+C:\GHAU\GHAU\TestProject1\bin\Release\GHAU_CapaDatos.pdb
+C:\GHAU\GHAU\TestProject1\bin\Release\GHAU_CapaDatos.xml
+C:\GHAU\GHAU\TestProject1\obj\Release\TestProject1.dll
+C:\GHAU\GHAU\TestProject1\obj\Release\TestProject1.xml
+C:\GHAU\GHAU\TestProject1\obj\Release\TestProject1.pdb
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\bin\Release\TestProject1.dll
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\bin\Release\TestProject1.pdb
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\bin\Release\TestProject1.xml
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\bin\Release\GHAU_CapaDatos.dll
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\bin\Release\GHAU_CapaNegocio.dll
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\bin\Release\GHAU_CapaNegocio.pdb
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\bin\Release\GHAU_CapaNegocio.xml
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\bin\Release\GHAU_CapaDatos.pdb
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\bin\Release\GHAU_CapaDatos.xml
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\obj\Release\TestProject1.dll
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\obj\Release\TestProject1.xml
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\TestProject1\obj\Release\TestProject1.pdb
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\bin\Release\TestProject1.dll
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\bin\Release\TestProject1.pdb
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\bin\Release\TestProject1.xml
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\bin\Release\GHAU_CapaDatos.dll
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\bin\Release\GHAU_CapaNegocio.dll
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\bin\Release\GHAU_CapaNegocio.pdb
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\bin\Release\GHAU_CapaNegocio.xml
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\bin\Release\GHAU_CapaDatos.pdb
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\bin\Release\GHAU_CapaDatos.xml
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\obj\Release\TestProject1.dll
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\obj\Release\TestProject1.xml
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\obj\Release\TestProject1.pdb

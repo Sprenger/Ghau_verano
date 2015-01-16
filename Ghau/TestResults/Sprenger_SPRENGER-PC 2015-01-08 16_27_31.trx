@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4fc534ab-a0ca-4f48-a973-70a8c336764d" name="Sprenger@SPRENGER-PC 2015-01-08 16:27:31" runUser="Sprenger-PC\Sprenger" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Ejecución de pruebas local" id="36892c21-a994-4aa5-9de0-3d11072462b5">
+    <Description>Configuración de ejecución de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment runDeploymentRoot="C:\GHAU\GHAU\TestResults\Sprenger_SPRENGER-PC 2015-01-08 16_27_31">
+      <DeploymentItem filename="C:\GHAU\GHAU\GHAU_CapaDatos\bin\Release\GHAU_CapaDatos.dll" />
+      <DeploymentItem filename="C:\GHAU\GHAU\GHAU_CapaNegocio\bin\Release\GHAU_CapaNegocio.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2015-01-08T16:27:31.1310574-03:00" queuing="2015-01-08T16:27:32.8891580-03:00" start="2015-01-08T16:27:33.1631736-03:00" finish="2015-01-08T16:27:47.8550140-03:00" />
+  <TestDefinitions>
+    <UnitTest name="ingreso_eventoTest" storage="c:\ghau\ghau\pruebas unitarias\bin\release\pruebas unitarias.dll" id="d5d67204-57d2-12f7-3523-d5391002f656">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="6b654436-71a5-4e99-b8d3-1a02dca0e452" />
+      <TestMethod codeBase="C:\GHAU\GHAU\Pruebas Unitarias\bin\Release\Pruebas Unitarias.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Pruebas_Unitarias.EventosTest, Pruebas Unitarias" name="ingreso_eventoTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="d5d67204-57d2-12f7-3523-d5391002f656" executionId="6b654436-71a5-4e99-b8d3-1a02dca0e452" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6b654436-71a5-4e99-b8d3-1a02dca0e452" testId="d5d67204-57d2-12f7-3523-d5391002f656" testName="ingreso_eventoTest" computerName="SPRENGER-PC" duration="00:00:13.7423464" startTime="2015-01-08T16:27:33.3661852-03:00" endTime="2015-01-08T16:27:47.6900045-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de prueba Pruebas_Unitarias.EventosTest.ingreso_eventoTest produjo la excepción:  System.IndexOutOfRangeException: No se puede encontrar la columna 0..</Message>
+          <StackTrace>    en System.Data.DataColumnCollection.get_Item(Int32 index)
+   en System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   en Pruebas_Unitarias.EventosTest.ingreso_eventoTest() en C:\GHAU\GHAU\Pruebas Unitarias\EventosTest.vb:línea 99
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

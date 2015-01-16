@@ -1,0 +1,251 @@
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.application
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.pdb
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.xml
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.dll
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.dll
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.pdb
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.xml
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.pdb
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.xml
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.evento.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Grafico.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.G_Usabilidad.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU3.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Unidades_Academicas.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.MODIFICARBETAvb.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.ImportarHorario.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form2.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form3.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.importar_sala.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Programas.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Resources.resources
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.vbproj.GenerateResource.Cache
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.application
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.xml
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.pdb
+C:\Users\FGM\Desktop\New folder\branches\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU21.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.xml
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.pdb
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.application
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.pdb
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.xml
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.dll
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.dll
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.pdb
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.xml
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.pdb
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.xml
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.evento.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Grafico.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.G_Usabilidad.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU21.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU3.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Unidades_Academicas.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.MODIFICARBETAvb.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.ImportarHorario.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form2.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form3.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.importar_sala.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Programas.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Resources.resources
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.vbproj.GenerateResource.Cache
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\Sprenger\Documents\GitHub\GHAU\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.application
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.xml
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.pdb
+C:\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe.manifest
+C:\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.application
+C:\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe
+C:\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.pdb
+C:\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.xml
+C:\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.dll
+C:\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.dll
+C:\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.pdb
+C:\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.xml
+C:\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.pdb
+C:\GHAU\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.xml
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\ResolveAssemblyReference.cache
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.evento.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Grafico.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.G_Usabilidad.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU21.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU3.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Unidades_Academicas.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.MODIFICARBETAvb.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.ImportarHorario.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form2.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form3.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.importar_sala.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Programas.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Resources.resources
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.vbproj.GenerateResource.Cache
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe.manifest
+C:\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.application
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.application
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.pdb
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.xml
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.dll
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.dll
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.pdb
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.xml
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.pdb
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.xml
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.evento.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Grafico.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.G_Usabilidad.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU21.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU3.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Unidades_Academicas.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.MODIFICARBETAvb.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.ImportarHorario.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form2.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form3.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.importar_sala.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Programas.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Resources.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.vbproj.GenerateResource.Cache
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.application
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.xml
+C:\Users\Sprenger\Documents\ghau_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.pdb
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.xml
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.pdb
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.application
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.pdb
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.xml
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.dll
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.dll
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.pdb
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.xml
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.pdb
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.xml
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.evento.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Grafico.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.G_Usabilidad.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU21.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU3.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Unidades_Academicas.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.MODIFICARBETAvb.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.ImportarHorario.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form2.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form3.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.importar_sala.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Programas.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Resources.resources
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.vbproj.GenerateResource.Cache
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\Sprenger\Documents\ghau_2\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.application
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.xml
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.pdb
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.application
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.pdb
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.xml
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.dll
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.dll
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.pdb
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.xml
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.pdb
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.xml
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.evento.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Grafico.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.G_Usabilidad.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU21.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU3.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Unidades_Academicas.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.MODIFICARBETAvb.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.ImportarHorario.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form2.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form3.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.importar_sala.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Programas.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Resources.resources
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.vbproj.GenerateResource.Cache
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\FGM\Desktop\Ghau_Repo\GHAU_2\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.application
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.xml
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\GHAU\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.pdb
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.xml
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.pdb
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.application
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.pdb
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.xml
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.dll
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.dll
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.pdb
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.xml
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.pdb
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.xml
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.evento.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Grafico.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.G_Usabilidad.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU21.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU3.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Unidades_Academicas.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.MODIFICARBETAvb.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.ImportarHorario.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form2.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form3.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.importar_sala.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Programas.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Resources.resources
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.vbproj.GenerateResource.Cache
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.application
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.application
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.exe
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaPresenta.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaNegocio.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\bin\Debug\GHAU_CapaDatos.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.evento.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Grafico.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.G_Usabilidad.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU21.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.HU3.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Unidades_Academicas.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.MODIFICARBETAvb.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.ImportarHorario.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form2.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Form3.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.importar_sala.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Mantenedor_Programas.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.Resources.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.vbproj.GenerateResource.Cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe.manifest
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.application

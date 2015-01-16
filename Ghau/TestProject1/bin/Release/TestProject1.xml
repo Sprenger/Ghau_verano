@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TestProject1
+</name>
+</assembly>
+<members>
+<member name="P:TestProject1.funcionesTest.TestContext">
+	<summary>
+Obtiene o establece el contexto de la prueba que proporciona
+la información y funcionalidad para la ejecución de pruebas actual.
+</summary>
+</member><member name="M:TestProject1.funcionesTest.modularizacionTest">
+	<summary>
+Una prueba de modularizacion
+</summary>
+</member><member name="T:TestProject1.funcionesTest">
+	<summary>
+Se trata de una clase de prueba para funcionesTest y se pretende que
+contenga todas las pruebas unitarias funcionesTest.
+</summary>
+</member><member name="P:TestProject1.EventosTest.TestContext">
+	<summary>
+Obtiene o establece el contexto de la prueba que proporciona
+la información y funcionalidad para la ejecución de pruebas actual.
+</summary>
+</member><member name="M:TestProject1.EventosTest.ingreso_eventoTest">
+	<summary>
+Una prueba de ingreso_evento
+</summary>
+</member><member name="T:TestProject1.EventosTest">
+	<summary>
+Se trata de una clase de prueba para EventosTest y se pretende que
+contenga todas las pruebas unitarias EventosTest.
+</summary>
+</member>
+</members>
+</doc>

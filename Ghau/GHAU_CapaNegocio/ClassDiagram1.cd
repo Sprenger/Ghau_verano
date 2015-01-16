@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GHAU_CapaNegocio.Control_de_Dato" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Control_de_Datos.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GHAU_CapaNegocio.EstadoBaseDatos" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAICAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EstadoBaseDatos.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GHAU_CapaNegocio.Excel" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Excel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GHAU_CapaNegocio.IngresoBD" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAQBAgAACgAAAIiAAAIAgIQACDBAIIAAQAAQAQA=</HashCode>
+      <FileName>IngresoBD.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GHAU_CapaNegocio.Llenado_Combobox" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAACEAAAAAAEAAAAAAAAAAACAAQAAAAAEA=</HashCode>
+      <FileName>Llenado_Combobox.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GHAU_CapaNegocio.Modularizacion" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAACAAAABAAAAQAAAAAAA=</HashCode>
+      <FileName>Modularizacion.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GHAU_CapaNegocio.Validado_Rut" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Validado_Rut.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GHAU_CapaNegocio.My.MySettings" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="GHAU_CapaNegocio.My.Resources.Resources" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="GHAU_CapaNegocio.My.MySettingsProperty" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

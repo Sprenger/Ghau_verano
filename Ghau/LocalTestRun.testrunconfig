@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRunConfiguration name="Ejecución de pruebas local" id="36892c21-a994-4aa5-9de0-3d11072462b5" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <Description>Configuración de ejecución de pruebas predeterminada para una ejecución de pruebas local.</Description>
+  <TestTypeSpecific />
+</TestRunConfiguration>
