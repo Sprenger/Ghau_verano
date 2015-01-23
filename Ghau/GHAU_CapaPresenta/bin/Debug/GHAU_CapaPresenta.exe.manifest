@@ -82,38 +82,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaDatos.dll" size="78848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaDatos.dll" size="79360">
       <assemblyIdentity name="GHAU_CapaDatos" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>olQTAZm65duNzoyBa6gw7A2Q3aY=</dsig:DigestValue>
+        <dsig:DigestValue>l660Wp2wiHUGNWtCRgoS0b7WsxI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaNegocio.dll" size="87040">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaNegocio.dll" size="90112">
       <assemblyIdentity name="GHAU_CapaNegocio" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Yn4FlTcDYPnX8ayE+XyDlXHRJ+4=</dsig:DigestValue>
+        <dsig:DigestValue>tEclyCPgeeNejSoCtoBBQ+T52l4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaPresenta.exe" size="3081728">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaPresenta.exe" size="3082240">
       <assemblyIdentity name="GHAU_CapaPresenta" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>bD7k8ARbsbOrFKvdQQ6/14PVrzs=</dsig:DigestValue>
+        <dsig:DigestValue>YCjagN8Ua1Vh1yu8SCh8cy6xG80=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

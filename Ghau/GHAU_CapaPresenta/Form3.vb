@@ -6,25 +6,40 @@ Imports System.Data.SqlClient
 
 Public Class Form3
 
-    Public nombre_servidor, usuario, pass As String
-    Dim datatable As New GHAU_CapaNegocio.ImportarHorario
-    Public dt_docente As DataTable
-    Private grilla_horario As DataTable = datatable.Cargar_Horario()
-    Private dthorario As New GHAU_CapaNegocio.Negocio
-    Public datatablehorarios As DataTable = dthorario.ConsultaHorarios
-    Public datatableDocente As DataTable = dthorario.ConsultarDocentes
-    Public datatableActividades As DataTable = dthorario.ConsultaHorarios
-    Public datatablesalas As DataTable = dthorario.consultarsalas
-    Public dtnodosSalas As DataTable = dthorario.salass("VM")
-    Public dtprogramas As DataTable = dthorario.consultarprogramas
-    Public dtunidaesAcademicas As DataTable = dthorario.consultarunidadesacademicas
-    Public Dt_eventos As DataTable
-    Public dt_liberar As DataTable
-    Public dtevento As DataTable
+   
     Private Sub Form3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cargar_form3()
+        If _estadoconeccion_() Then
+            funciones()
+            cargar_form3()
+        Else
+            MsgBox("Revise la coneccion")
+            Me.Close()
+        End If
+    End Sub
+    Public dt_docente As DataTable
+    Dim datatable As New GHAU_CapaNegocio.ImportarHorario
+    Dim dthorario As New GHAU_CapaNegocio.Negocio
+    Public nombre_servidor, usuario, pass As String
+    Public grilla_horario, datatablehorarios, datatableDocente, dtevento, datatableActividades, datatablesalas, dtnodosSalas, dtprogramas, dtunidaesAcademicas, dt_liberar, Dt_eventos As DataTable
+    Sub funciones()
+
+
+        grilla_horario = datatable.Cargar_Horario()
+
+        datatablehorarios = dthorario.ConsultaHorarios
+        datatableDocente = dthorario.ConsultarDocentes
+        datatableActividades = dthorario.ConsultaHorarios
+        datatablesalas = dthorario.consultarsalas
+        dtnodosSalas = dthorario.salass("VM")
+        dtprogramas = dthorario.consultarprogramas
+        dtunidaesAcademicas = dthorario.consultarunidadesacademicas
+        
     End Sub
 
+    Private Function _estadoconeccion_() As Boolean
+        Dim estado As New GHAU_CapaNegocio.funciones
+        Return estado.Estado_coneccion
+           End Function
     Dim DIASELECCIONADO As String
     Dim dtGrilla As DataTable
     Public Sub cargar(ByVal dia As String, ByVal FORZADO As Boolean)
@@ -441,6 +456,8 @@ Public Class Form3
                 End If
             Next
             Dim cms = New ContextMenuStrip
+            Dim xx = xinicio
+            Dim yy = GRILLA_MOSTRAR.Rows(CInt(xinicio.ToString)).Cells(CInt(yinicio)).ToString
             Dim f = GRILLA_MOSTRAR.Rows(CInt(xinicio.ToString)).Cells(CInt(yinicio)).ToolTipText
             Dim bandera2 = Split(f.ToString, vbNewLine)
 
@@ -452,12 +469,12 @@ Public Class Form3
                 Dim item3 = cms.Items.Add("Liberar")
                 item3.Tag = 3
                 AddHandler item3.Click, AddressOf menuChoice
-            ElseIf f <> "" And bandera2(2) = "EVENTO" Then
+            ElseIf f <> " " And bandera2(2) = "EVENTO" Then
                 Dim item2 = cms.Items.Add("Modificar")
                 item2.Tag = 2
                 AddHandler item2.Click, AddressOf menuChoice
             Else
-                MsgBox("ya se encuentra liberado.")
+                MsgBox("Ya se encuentra liberado.")
             End If
 
 

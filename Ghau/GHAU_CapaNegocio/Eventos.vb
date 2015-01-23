@@ -34,7 +34,8 @@
         dterror.Columns.Add("NRC", Type.GetType("System.String"))
         dterror.Columns.Add("ERROR", Type.GetType("System.String"))
         Dim bandera2 As Integer
-
+        Dim bandera23 As Boolean = True
+        Dim bandera24 As Boolean = True
         For i = 0 To dato.Rows.Count - 1
             Dim bandera1 = dato.Rows.Count
 
@@ -105,16 +106,29 @@
                                             'MsgBox("Guardado Exitoso!")
                                             Return Nothing
                                         Else
-                                            MsgBox("Desea Cargar Los que no tienen Error?", MsgBoxStyle.YesNo, "Errores de Registro")
-                                            If MsgBoxResult.Yes = 6 Then
-                                                x.eliminarEvento(pe)
-                                                For p = 0 To arr_dia.Length - 1
-                                                    x.guardar_A_Evento(dato.Rows(i).Item(5).ToString, dato.Rows(i).Item(6).ToString, _
-                                                                 cambiadia(arr_dia(p)), dato.Rows(i).Item(1).ToString, _
-                                                                 dato.Rows(i).Item(2).ToString, dato.Rows(i).Item(11).ToString, bloque, _
-                                                                 dato.Rows(i).Item(0).ToString, Date.Now, "PRESENCIAL", periodo)
-                                                Next
-                                                MsgBox("Guardado Exitoso!")
+                                            If bandera23 Or bandera24 Then
+
+                                                If bandera23 Then
+                                                    MsgBox("Desea Cargar Los que no tienen Error?", MsgBoxStyle.YesNo, "Errores de Registro")
+                                                End If
+
+                                                If MsgBoxResult.Yes = 6 Then
+                                                    x.eliminarEvento(pe)
+                                                    For p = 0 To arr_dia.Length - 1
+                                                        x.guardar_A_Evento(dato.Rows(i).Item(5).ToString, dato.Rows(i).Item(6).ToString, _
+                                                                     cambiadia(arr_dia(p)), dato.Rows(i).Item(1).ToString, _
+                                                                     dato.Rows(i).Item(2).ToString, dato.Rows(i).Item(11).ToString, bloque, _
+                                                                     dato.Rows(i).Item(0).ToString, Date.Now, "PRESENCIAL", periodo)
+                                                    Next
+                                                    If bandera23 Then
+                                                        MsgBox("Guardado Exitoso!")
+                                                    End If
+
+                                                    bandera24 = True
+                                                Else
+                                                    bandera24 = False
+                                                End If
+                                                bandera23 = False
                                             End If
                                         End If
 
@@ -158,9 +172,26 @@
 1:
         Next
         'Next
-        x.guardar_evento(dterror)
 
-        Return (dterror)
+
+
+
+     
+
+        Dim vista As New DataView(dterror)
+        Dim dtsindupl As DataTable = vista.ToTable(True, "NRC", "ERROR")
+
+
+
+
+        x.guardar_evento(dtsindupl)
+
+
+
+
+
+
+        Return (dtsindupl)
     End Function
 
     Function cambiadia(ByVal dia As String)

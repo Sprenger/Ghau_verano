@@ -16,6 +16,30 @@ Public Class BaseDato
 
         Return dt
     End Function
+    Public Function Estadoconeccion() As DataTable
+        'SELECT SYSDATETIME()
+        Try
+            conectado()
+            cmd = New SqlCommand("SELECT SYSDATETIME()")
+            cmd.CommandType = CommandType.Text
+            cmd.Connection = cnn
+
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+                Return dt
+            Else
+                Return Nothing
+            End If
+        Catch ex As Exception
+            'MsgBox("Error al mostrar " + ex.Message)
+            Return Nothing
+        Finally
+            desconectado()
+        End Try
+
+    End Function
     Public Function mostrar(ByVal consulta As String) As DataTable
         Try
             conectado()
@@ -319,7 +343,7 @@ Public Class BaseDato
             rut_docente = Replace(rut_docente, " ", "")
         End If
 
-        Dim Fecha_inicios As Date = Fecha_inicio
+        Dim Fecha_inicios As Date = CDate(Fecha_inicio)
         Dim temp_fecha_I = Fecha_inicios.ToString("dd-MMM-yyy", _
                   CultureInfo.InvariantCulture)
         Dim fecha_fins As Date = fecha_fin

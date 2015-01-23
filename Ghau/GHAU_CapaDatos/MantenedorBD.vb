@@ -750,7 +750,7 @@ Public Class MantenedorBD
 
     End Function
     Function consultarcantidadSoloSala() As DataTable
-        Dim consulta = "SELECT count(se.sala_codigo)  FROM Salas S, Salas_Edificios SE WHERE S.sala_codigo=SE.sala_codigo AND s.Descripcion_sala<> 'NO DISPONIBLE' and s.sala like 'sal%'"
+        Dim consulta = "SELECT count(se.sala_codigo)  FROM Salas S, Salas_Edificios SE WHERE S.sala_codigo=SE.sala_codigo AND s.Descripcion_sala<> 'NO DISPONIBLE' and s.sala like 'sal%' and s.sala_codigo like 'VM%'"
         Dim cmd As New SqlCommand
         Dim dt As New DataTable
         Try
@@ -1651,19 +1651,19 @@ Public Class MantenedorBD
         If jornada.ToUpper = "TODOS" Then
 
             If evento Then
-                consulta = "select sum(b.rango)*100/" & countsala & " from Horarios h, Bloques b where dia=" & dia & "  and (@fecha between h.fecha_inicio and h.fecha_fin) and b.bloque_codigo = h.bloque_codigo and b.rango<20 and h.sala_codigo like 'VM-SAL%' "
+                consulta = "select sum(b.rango)*100/" & countsala & " from Horarios h, Bloques b where (@fecha between h.fecha_inicio and h.fecha_fin) and b.bloque_codigo = h.bloque_codigo and b.rango<20 and h.sala_codigo like 'VM-SAL%' "
 
             Else
-                consulta = "select sum(b.rango)*100/" & countsala & "  from Horarios h, Bloques b where dia=" & dia & "  and (@fecha between h.fecha_inicio and h.fecha_fin ) AND tipo_actividad <> '" & tipo_actividad_codigo.ToUpper & "' and b.bloque_codigo = h.bloque_codigo and b.rango<20 and h.sala_codigo like 'VM-SAL%' "
+                consulta = "select sum(b.rango)*100/" & countsala & "  from Horarios h, Bloques b where (@fecha between h.fecha_inicio and h.fecha_fin ) AND tipo_actividad <> '" & tipo_actividad_codigo.ToUpper & "' and b.bloque_codigo = h.bloque_codigo and b.rango<20 and h.sala_codigo like 'VM-SAL%' "
 
             End If
         Else
 
             If evento Then
-                consulta = "select sum(b.rango)*100/" & countsala & "  from Horarios h, Bloques b where dia=" & dia & " and   jornada_codigo='" & jornada & "' and (@fecha between h.fecha_inicio and h.fecha_fin) and b.bloque_codigo = h.bloque_codigo and b.rango<20 and h.sala_codigo like 'VM-SAL%' "
+                consulta = "select sum(b.rango)*100/" & countsala & "  from Horarios h, Bloques b where jornada_codigo='" & jornada & "' and (@fecha between h.fecha_inicio and h.fecha_fin) and b.bloque_codigo = h.bloque_codigo and b.rango<20 and h.sala_codigo like 'VM-SAL%' "
 
             Else
-                consulta = "select sum(b.rango)*100/" & countsala & "  from Horarios h, Bloques b where dia=" & dia & " and   jornada_codigo='" & jornada & "' and (@fecha between h.fecha_inicio and h.fecha_fin) AND tipo_actividad <> '" & tipo_actividad_codigo.ToUpper & "' and b.bloque_codigo = h.bloque_codigo and b.rango<20 and h.sala_codigo like 'VM-SAL%' "
+                consulta = "select sum(b.rango)*100/" & countsala & "  from Horarios h, Bloques b where    jornada_codigo='" & jornada & "' and (@fecha between h.fecha_inicio and h.fecha_fin) AND tipo_actividad <> '" & tipo_actividad_codigo.ToUpper & "' and b.bloque_codigo = h.bloque_codigo and b.rango<20 and h.sala_codigo like 'VM-SAL%' "
 
             End If
         End If

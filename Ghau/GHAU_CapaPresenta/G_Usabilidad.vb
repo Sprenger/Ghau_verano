@@ -13,6 +13,9 @@ Public Class G_Usabilidad
         If CB_ConEvento.Checked Then
             evento = True
             CB_SinEvento.Checked = False
+        Else
+            CB_SinEvento.Checked = True
+
         End If
     End Sub
 
@@ -20,6 +23,8 @@ Public Class G_Usabilidad
         If CB_SinEvento.Checked Then
             CB_ConEvento.Checked = False
             evento = False
+        Else
+            CB_ConEvento.Checked = True
         End If
     End Sub
 
@@ -61,11 +66,6 @@ Public Class G_Usabilidad
         Chart1.Series("Series1").YValueMembers = "valor"
 
         Chart1.DataBind()
-
-        'Chart1.Series("Series1").XValueMember = "Producto"
-        'Chart1.Series("Series1").YValueMembers = "poto"
-        'Chart1.DataSource = dt
-
 
         'Lo Unico que resta es darle la serie al Chart
 

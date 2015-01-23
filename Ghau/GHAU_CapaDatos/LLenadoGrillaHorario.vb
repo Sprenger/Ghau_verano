@@ -27,7 +27,8 @@ Public Class LLenadoGrillaHorario
             cnn.Open() 'abre coneccion
 
         Catch ex As Exception
-
+            MsgBox("No hay coneccion")
+            Return Nothing
         End Try
 
         Try

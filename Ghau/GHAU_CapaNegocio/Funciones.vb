@@ -1,5 +1,13 @@
 ﻿Public Class funciones
-    
+    Public Function Estado_coneccion() As Boolean
+        Dim x As New GHAU_CapaDatos.BaseDato
+        Dim dt As DataTable = x.Estadoconeccion
+        If dt Is Nothing Then
+            Return False
+        Else
+            Return True
+        End If
+    End Function
     Public Function modularizacion(ByVal inicio As String, ByVal fin As String, ByVal Jornada As String) As String
 
         Dim flag As Boolean = True

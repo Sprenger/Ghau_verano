@@ -1,4 +1,5 @@
 ﻿Public Class funciones
+
     Public Function modularizacion(ByVal inicio As String, ByVal fin As String, ByVal Jornada As String) As String
 
         Dim flag As Boolean = True

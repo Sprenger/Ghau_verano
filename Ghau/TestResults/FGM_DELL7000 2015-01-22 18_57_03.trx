@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="24e95c5c-11d6-4a9e-a0c7-e8f4ca8ec655" name="FGM@DELL7000 2015-01-22 18:57:03" runUser="Dell7000\FGM" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Ejecución de pruebas local" id="36892c21-a994-4aa5-9de0-3d11072462b5">
+    <Description>Configuración de ejecución de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment runDeploymentRoot="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestResults\FGM_DELL7000 2015-01-22 18_57_03">
+      <DeploymentItem filename="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\bin\Debug\GHAU_CapaDatos.dll" />
+      <DeploymentItem filename="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\bin\Debug\GHAU_CapaNegocio.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2015-01-22T18:57:03.3786523-03:00" queuing="2015-01-22T18:57:04.8150807-03:00" start="2015-01-22T18:57:04.9568819-03:00" finish="2015-01-22T18:57:19.1004721-03:00" />
+  <TestDefinitions>
+    <UnitTest name="ingreso_eventoTest" storage="c:\users\fgm\dropbox\hans molina fleming\verano2015\ghau\israel\testproject1\bin\debug\testproject1.dll" id="efb122d4-2727-8cdc-7b5b-f4fa95109858">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="60d0b679-878e-460f-9870-9054cefb5841" />
+      <TestMethod codeBase="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.EventosTest, TestProject1" name="ingreso_eventoTest" />
+    </UnitTest>
+    <UnitTest name="ValidarChoquesExcelTest" storage="c:\users\fgm\dropbox\hans molina fleming\verano2015\ghau\israel\testproject1\bin\debug\testproject1.dll" id="f2908aa8-f366-5947-4a6b-876c6c36cba1">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="11c0419f-adcf-4ac5-bc0e-d7baaf4f770a" />
+      <TestMethod codeBase="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.ExcelTest, TestProject1" name="ValidarChoquesExcelTest" />
+    </UnitTest>
+    <UnitTest name="modularizacionTest" storage="c:\users\fgm\dropbox\hans molina fleming\verano2015\ghau\israel\testproject1\bin\debug\testproject1.dll" id="d90d9c01-a388-00ed-3a2c-4a3849298f26">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="8f11c295-d823-4999-bc84-60366894b8f2" />
+      <TestMethod codeBase="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.funcionesTest, TestProject1" name="modularizacionTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="efb122d4-2727-8cdc-7b5b-f4fa95109858" executionId="60d0b679-878e-460f-9870-9054cefb5841" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d90d9c01-a388-00ed-3a2c-4a3849298f26" executionId="8f11c295-d823-4999-bc84-60366894b8f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2908aa8-f366-5947-4a6b-876c6c36cba1" executionId="11c0419f-adcf-4ac5-bc0e-d7baaf4f770a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="60d0b679-878e-460f-9870-9054cefb5841" testId="efb122d4-2727-8cdc-7b5b-f4fa95109858" testName="ingreso_eventoTest" computerName="DELL7000" duration="00:00:00.0897242" startTime="2015-01-22T18:57:05.1068495-03:00" endTime="2015-01-22T18:57:05.5670569-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8f11c295-d823-4999-bc84-60366894b8f2" testId="d90d9c01-a388-00ed-3a2c-4a3849298f26" testName="modularizacionTest" computerName="DELL7000" duration="00:00:11.6775165" startTime="2015-01-22T18:57:05.6090867-03:00" endTime="2015-01-22T18:57:17.3366214-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="11c0419f-adcf-4ac5-bc0e-d7baaf4f770a" testId="f2908aa8-f366-5947-4a6b-876c6c36cba1" testName="ValidarChoquesExcelTest" computerName="DELL7000" duration="00:00:00.1611755" startTime="2015-01-22T18:57:17.3590240-03:00" endTime="2015-01-22T18:57:17.5252605-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

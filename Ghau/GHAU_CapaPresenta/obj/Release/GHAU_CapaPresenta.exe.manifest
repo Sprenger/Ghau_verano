@@ -89,31 +89,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>fn6SdwUh80y/R3sv1djfMfGgkCc=</dsig:DigestValue>
+        <dsig:DigestValue>6orHgU3b1GL3vThmo8XFafbLpP0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaNegocio.dll" size="78848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaNegocio.dll" size="82432">
       <assemblyIdentity name="GHAU_CapaNegocio" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>AARUkchE+S1MOXockySSfu3btTE=</dsig:DigestValue>
+        <dsig:DigestValue>ELMkCacY3OnjWQ8Y+TBrCAF9iFc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaPresenta.exe" size="3066368">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaPresenta.exe" size="3066880">
       <assemblyIdentity name="GHAU_CapaPresenta" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Zuin9f3/4EoEqaYHRiKYgFH/x9I=</dsig:DigestValue>
+        <dsig:DigestValue>01rJ3ZIDLL5+wGQEKCdhn+ZXRRc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="51d23db2-8fd1-44ef-b6be-e0030d6f1870" name="FGM@DELL7000 2015-01-22 18:23:07" runUser="Dell7000\FGM" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Ejecución de pruebas local" id="36892c21-a994-4aa5-9de0-3d11072462b5">
+    <Description>Configuración de ejecución de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment runDeploymentRoot="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestResults\FGM_DELL7000 2015-01-22 18_23_07">
+      <DeploymentItem filename="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\bin\Debug\GHAU_CapaDatos.dll" />
+      <DeploymentItem filename="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\bin\Debug\GHAU_CapaNegocio.dll" />
+    </Deployment>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Error">
+    <Counters total="3" executed="3" passed="1" error="0" failed="1" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DELL7000" outcome="Error" timestamp="2015-01-22T18:24:03.1874325-03:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <Times creation="2015-01-22T18:23:07.2053375-03:00" queuing="2015-01-22T18:23:08.6682299-03:00" start="2015-01-22T18:23:08.7973718-03:00" finish="2015-01-22T18:24:03.1874325-03:00" />
+  <TestDefinitions>
+    <UnitTest name="ingreso_eventoTest" storage="c:\users\fgm\dropbox\hans molina fleming\verano2015\ghau\israel\testproject1\bin\debug\testproject1.dll" id="efb122d4-2727-8cdc-7b5b-f4fa95109858">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="b8156476-fa8e-48fd-ae8e-50313118b12f" />
+      <TestMethod codeBase="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.EventosTest, TestProject1" name="ingreso_eventoTest" />
+    </UnitTest>
+    <UnitTest name="ValidarChoquesExcelTest" storage="c:\users\fgm\dropbox\hans molina fleming\verano2015\ghau\israel\testproject1\bin\debug\testproject1.dll" id="f2908aa8-f366-5947-4a6b-876c6c36cba1">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="6b623daf-3512-4873-9e75-cd62cb293b5b" />
+      <TestMethod codeBase="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.ExcelTest, TestProject1" name="ValidarChoquesExcelTest" />
+    </UnitTest>
+    <UnitTest name="modularizacionTest" storage="c:\users\fgm\dropbox\hans molina fleming\verano2015\ghau\israel\testproject1\bin\debug\testproject1.dll" id="d90d9c01-a388-00ed-3a2c-4a3849298f26">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="848f27e9-0b59-45d4-9db7-7d41aeb0c534" />
+      <TestMethod codeBase="C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.funcionesTest, TestProject1" name="modularizacionTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="efb122d4-2727-8cdc-7b5b-f4fa95109858" executionId="b8156476-fa8e-48fd-ae8e-50313118b12f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d90d9c01-a388-00ed-3a2c-4a3849298f26" executionId="848f27e9-0b59-45d4-9db7-7d41aeb0c534" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2908aa8-f366-5947-4a6b-876c6c36cba1" executionId="c517116d-4af7-47cc-8bee-00d16198ad76" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b8156476-fa8e-48fd-ae8e-50313118b12f" testId="efb122d4-2727-8cdc-7b5b-f4fa95109858" testName="ingreso_eventoTest" computerName="DELL7000" duration="00:00:00.0686656" startTime="2015-01-22T18:23:08.9149451-03:00" endTime="2015-01-22T18:23:09.2612321-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="848f27e9-0b59-45d4-9db7-7d41aeb0c534" testId="d90d9c01-a388-00ed-3a2c-4a3849298f26" testName="modularizacionTest" computerName="DELL7000" duration="00:00:00.0219935" startTime="2015-01-22T18:23:09.2632330-03:00" endTime="2015-01-22T18:23:09.2875677-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject1.funcionesTest.modularizacionTest threw exception:  System.IndexOutOfRangeException: Index was outside the bounds of the array..</Message>
+          <StackTrace>    at GHAU_CapaNegocio.funciones.modularizacion(String inicio, String fin, String Jornada) in C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\Funciones.vb:line 236
+   at TestProject1.funcionesTest.modularizacionTest() in C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\funcionesTest.vb:line 68
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c517116d-4af7-47cc-8bee-00d16198ad76" testId="f2908aa8-f366-5947-4a6b-876c6c36cba1" testName="ValidarChoquesExcelTest" computerName="DELL7000" duration="00:00:53.8968611" startTime="2015-01-22T18:23:09.2905714-03:00" endTime="2015-01-22T18:24:03.1874325-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -6,7 +6,21 @@ TestProject1
 </name>
 </assembly>
 <members>
-<member name="P:TestProject1.EventosTest.TestContext">
+<member name="P:TestProject1.ExcelTest.TestContext">
+	<summary>
+Gets or sets the test context which provides
+information about and functionality for the current test run.
+</summary>
+</member><member name="M:TestProject1.ExcelTest.ValidarChoquesExcelTest">
+	<summary>
+A test for ValidarChoquesExcel
+</summary>
+</member><member name="T:TestProject1.ExcelTest">
+	<summary>
+This is a test class for ExcelTest and is intended
+to contain all ExcelTest Unit Tests
+</summary>
+</member><member name="P:TestProject1.EventosTest.TestContext">
 	<summary>
 Obtiene o establece el contexto de la prueba que proporciona
 la información y funcionalidad para la ejecución de pruebas actual.

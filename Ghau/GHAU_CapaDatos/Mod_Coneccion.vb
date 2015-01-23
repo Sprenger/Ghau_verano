@@ -62,7 +62,7 @@ Module Mod_Coneccion
             cnn.Open()
             Return True
         Catch ex As Exception
-            MsgBox("Conectado " + ex.Message)
+            'MsgBox("Conectado " + ex.Message)
             Return False
         End Try
     End Function

@@ -62,7 +62,7 @@ Public Class funcionesTest
         Dim target As GHAU_CapaNegocio.funciones = New GHAU_CapaNegocio.funciones ' TODO: Inicializar en un valor adecuado
         Dim inicio As String = "830" ' TODO: Inicializar en un valor adecuado
         Dim fin As String = "915" ' TODO: Inicializar en un valor adecuado
-        Dim Jornada As String = "Evento" ' TODO: Inicializar en un valor adecuado
+        Dim Jornada As String = "EVENTO" ' TODO: Inicializar en un valor adecuado
         Dim expected As String = "10000000000000000000" ' TODO: Inicializar en un valor adecuado
         Dim actual As String
         actual = target.modularizacion(inicio, fin, Jornada)
