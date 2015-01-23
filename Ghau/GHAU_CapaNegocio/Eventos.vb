@@ -1,15 +1,41 @@
 ﻿Public Class Eventos
     Dim dx As DateTime
     Dim dx2 As DateTime
+
     Dim x As New GHAU_CapaDatos.Agregar_evento
     Dim z As New GHAU_CapaNegocio.funciones
     Dim eliminarNRC As New GHAU_CapaDatos.BaseDato
+
+    Public Function recorrer_l(ByVal dia, ByVal fecha)
+        Dim val = x.recorrer(dia, fecha)
+        If val Is Nothing Then
+            Return False
+        Else
+            Return val
+        End If
+    End Function
+    Public Function liberando(ByVal liberta As DataTable, ByVal dt As DataTable)
+        For k = 0 To liberta.Rows.Count - 1
+            For j = 0 To dt.Rows.Count - 1
+                If liberta.Rows(k).Item(0).ToString = dt.Rows(j).Item(1).ToString Then
+                    Dim asdasd = liberta.Rows(k).Item(0).ToString
+                    Return True
+                Else
+                    Return False
+                End If
+
+            Next
+        Next
+    End Function
+
+
     Function ingreso_evento(ByVal dato As DataTable) As DataTable
         Dim dterror As New DataTable
         dterror.Columns.Add("NRC", Type.GetType("System.String"))
         dterror.Columns.Add("ERROR", Type.GetType("System.String"))
         Dim bandera2 As Integer
-
+        Dim bandera23 As Boolean = True
+        Dim bandera24 As Boolean = True
         For i = 0 To dato.Rows.Count - 1
             Dim bandera1 = dato.Rows.Count
 
@@ -80,16 +106,29 @@
                                             'MsgBox("Guardado Exitoso!")
                                             Return Nothing
                                         Else
-                                            MsgBox("Desea Cargar Los que no tienen Error?", MsgBoxStyle.YesNo, "Errores de Registro")
-                                            If MsgBoxResult.Yes = 6 Then
-                                                x.eliminarEvento(pe)
-                                                For p = 0 To arr_dia.Length - 1
-                                                    x.guardar_A_Evento(dato.Rows(i).Item(5).ToString, dato.Rows(i).Item(6).ToString, _
-                                                                 cambiadia(arr_dia(p)), dato.Rows(i).Item(1).ToString, _
-                                                                 dato.Rows(i).Item(2).ToString, dato.Rows(i).Item(11).ToString, bloque, _
-                                                                 dato.Rows(i).Item(0).ToString, Date.Now, "PRESENCIAL", periodo)
-                                                Next
-                                                MsgBox("Guardado Exitoso!")
+                                            If bandera23 Or bandera24 Then
+
+                                                If bandera23 Then
+                                                    MsgBox("Desea Cargar Los que no tienen Error?", MsgBoxStyle.YesNo, "Errores de Registro")
+                                                End If
+
+                                                If MsgBoxResult.Yes = 6 Then
+                                                    x.eliminarEvento(pe)
+                                                    For p = 0 To arr_dia.Length - 1
+                                                        x.guardar_A_Evento(dato.Rows(i).Item(5).ToString, dato.Rows(i).Item(6).ToString, _
+                                                                     cambiadia(arr_dia(p)), dato.Rows(i).Item(1).ToString, _
+                                                                     dato.Rows(i).Item(2).ToString, dato.Rows(i).Item(11).ToString, bloque, _
+                                                                     dato.Rows(i).Item(0).ToString, Date.Now, "PRESENCIAL", periodo)
+                                                    Next
+                                                    If bandera23 Then
+                                                        MsgBox("Guardado Exitoso!")
+                                                    End If
+
+                                                    bandera24 = True
+                                                Else
+                                                    bandera24 = False
+                                                End If
+                                                bandera23 = False
                                             End If
                                         End If
 
@@ -206,6 +245,7 @@
 
     Function consultarExiste(ByVal bloque As String, ByVal sala As String, ByVal dias As String) As DataTable
         bloque = Replace(bloque, "0", "_")
+        Dim derechaIzq = False
         Dim arrbloques = bloque.ToCharArray
         For i = 11 To 13
             If arrbloques(i) = "1" Then
@@ -217,7 +257,7 @@
         For i = 0 To arrbloques.Length - 1
             Nuevobloque = Nuevobloque & arrbloques(i)
         Next
-
+        Dim Nuevobloque2 = Nuevobloque
 
 
         Dim dt_Existe As DataTable
@@ -228,22 +268,37 @@
             Return Nothing
         End If
 
-        dt_Existe = x.BuscarExiste(Nuevobloque, sala, dias)
+        dt_Existe = x.BuscarExiste(Nuevobloque, Nuevobloque2, sala, dias)
         If dt_Existe.Rows.Count = 0 And InStr(Nuevobloque, "1") > 0 Then
             arrbloques = Nuevobloque.ToCharArray
+
             For i = 0 To arrbloques.Length - 1
                 If arrbloques(i) = "1" Then
                     arrbloques(i) = "_"
                     Exit For
                 End If
             Next
+
+
             Nuevobloque = ""
             For i = 0 To arrbloques.Length - 1
                 Nuevobloque = Nuevobloque & arrbloques(i)
             Next
+            arrbloques = Nuevobloque2.ToCharArray
+
+            For i = arrbloques.Length - 1 To 0 Step -1
+                If arrbloques(i) = "1" Then
+                    arrbloques(i) = "_"
+                    Exit For
+                End If
+            Next
+            Nuevobloque2 = ""
+            For i = 0 To arrbloques.Length - 1
+                Nuevobloque2 = Nuevobloque2 & arrbloques(i)
+            Next
+
 
             GoTo 1
-
         End If
 
         Return dt_Existe 'x.BuscarExiste(bloque, sala)
@@ -251,5 +306,13 @@
     Function ConsultarEventos(ByVal parametro As String, ByVal columnaconsulta As String, ByVal columnaretorno As String) As DataTable
         Return x.BuscarEventos(parametro, columnaconsulta, columnaretorno)
     End Function
+    Sub eliminar(ByVal nrc As String)
+        x.eliminarEvento_nrc(nrc)
+    End Sub
+    Sub eliminarEvento(ByVal NRC As String)
+        Dim eliminar As New GHAU_CapaDatos.Agregar_evento
+
+        eliminar.EliminarEventos(NRC)
+    End Sub
 
 End Class

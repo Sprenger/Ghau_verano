@@ -109,6 +109,10 @@ Public Class Negocio
         Return programa.modificarPrograma(Codigonuevo, Glosanueva, Codigoviejo, Glosavieja)
 
     End Function
+    Function liberar_sala(ByVal nrc, ByVal dia, ByVal tipo_act, ByVal bloque, ByVal fecha_ini, ByVal fecha_fin, ByVal sala)
+        Dim free As New GHAU_CapaDatos.MantenedorBD(_NombreServidor_, _NombreUsuario_, _Pass_)
+        Return free.liberarSala(nrc, dia, tipo_act, bloque, fecha_ini, fecha_fin, sala)
+    End Function
 
     Function modificaruacademicas(ByVal Codigoviejo As String, ByVal Glosavieja As String, ByVal Codigonuevo As String, ByVal Glosanueva As String) As Boolean
         Dim programa As New GHAU_CapaDatos.MantenedorBD(_NombreServidor_, _NombreUsuario_, _Pass_)
@@ -152,8 +156,14 @@ Public Class Negocio
         ElseIf InStr(dia_evento.ToUpper, "DO") > 0 Then
             dia_evento = "7"
         End If
-        Dim dtHorario As DataTable = Horario.ConsultarEventos(dia_evento, docente_evento, nrc_evento, nombre_evento)
+        Dim dtHorario As DataTable = Horario.consultareventos(dia_evento, docente_evento, nrc_evento, nombre_evento)
         Return dtHorario
+    End Function
+    Function consultarLiberar(ByVal nrc) As DataTable
+        Dim Horario As New GHAU_CapaDatos.MantenedorBD(_NombreServidor_, _NombreUsuario_, _Pass_)
+
+        Dim dtLIBERAR As DataTable = Horario.consultareventos(nrc)
+        Return dtLIBERAR
     End Function
     Function consultarsalas() As DataTable
         Dim Horario As New GHAU_CapaDatos.MantenedorBD(_NombreServidor_, _NombreUsuario_, _Pass_)
@@ -385,7 +395,7 @@ Public Class Negocio
                         grafico.Rows(grafico.Rows.Count - 1).Item(6) = 0
                         grafico.Rows(grafico.Rows.Count - 1).Item(7) = 0
                     Next
-                               End If
+                End If
 
                 max = 0
                 For i = 0 To datosnecesarios.Rows.Count - 1
@@ -427,14 +437,14 @@ Public Class Negocio
 
 
 
-            End If
-            grafico.Columns.Add("MaxMin", Type.GetType("System.String"))
-            grafico.Rows(0).Item(grafico.Columns.Count - 1) = max
-            grafico.Rows(1).Item(grafico.Columns.Count - 1) = min
+        End If
+        grafico.Columns.Add("MaxMin", Type.GetType("System.String"))
+        grafico.Rows(0).Item(grafico.Columns.Count - 1) = max
+        grafico.Rows(1).Item(grafico.Columns.Count - 1) = min
 
 2:
-            '  Return programa.consultarHorarioFecha()
-            Return grafico
+        '  Return programa.consultarHorarioFecha()
+        Return grafico
     End Function
 
 

@@ -30,6 +30,3 @@ C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresent
 C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe
 C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.xml
 C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.pdb
-C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.exe
-C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.xml
-C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Debug\GHAU_CapaPresenta.pdb

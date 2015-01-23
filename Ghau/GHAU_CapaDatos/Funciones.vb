@@ -1,5 +1,5 @@
 ﻿Public Class funciones
-    
+
     Public Function modularizacion(ByVal inicio As String, ByVal fin As String, ByVal Jornada As String) As String
 
         Dim flag As Boolean = True
@@ -8,6 +8,8 @@
 
 
         If Jornada.ToString.ToUpper = "DIURNO" Then
+            inicio = Replace(inicio, ":", "")
+            fin = Replace(fin, ":", "")
 2:
             If 1 < CInt(inicio) And CInt(inicio) <= 830 Then
                 ini = "01"
@@ -233,69 +235,5 @@
         Next
 
         Return modulo
-    End Function
-
-    Public Function formatear_fecha(ByVal inicio, ByVal fin)
-        Dim d0 = Replace(inicio, "-", "/")
-        Dim s0 = Replace(fin, "-", "/")
-        Dim d1 = Split(d0, "/")
-        Dim d2 = d1(2) & d1(1) & d1(0)
-        Dim s1 = Split(s0, "/")
-        Dim s2 = s1(2) & s1(1) & s1(0)
-
-        If CInt(d2) < CInt(s2) Then
-            Return True
-        Else
-            Return False
-        End If
-
-    End Function
-
-    Public Function conversordia(ByVal dia As String)
-        Dim dia_Numero As String = Mid(dia.ToUpper.Trim, 1, 2)
-        Select Case dia_Numero
-            Case "LU"
-                dia = "1"
-            Case "MA"
-                dia = "2"
-            Case "MI"
-                dia = "3"
-            Case "JU"
-                dia = "4"
-            Case "VI"
-                dia = "5"
-            Case "SA"
-                dia = "6"
-            Case "DO"
-                dia = "7"
-            Case Else
-                dia = "8"
-
-        End Select
-        Return dia
-    End Function
-
-    Public Function conversorreves(ByVal dia As Integer)
-        Dim dialetra As String
-        Select Case dia
-            Case "1"
-                dialetra = "LU"
-            Case "2"
-                dialetra = "MA"
-            Case "3"
-                dialetra = "MI"
-            Case "4"
-                dialetra = "JU"
-            Case "5"
-                dialetra = "VI"
-            Case "6"
-                dialetra = "SA"
-            Case "7"
-                dialetra = "DO"
-            Case Else
-                MsgBox("Error Dia no encontrado")
-        End Select
-
-        Return dialetra
     End Function
 End Class

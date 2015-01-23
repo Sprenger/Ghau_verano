@@ -118,3 +118,15 @@ C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaNegocio\o
 C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaNegocio\obj\Debug\GHAU_CapaNegocio.dll
 C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaNegocio\obj\Debug\GHAU_CapaNegocio.xml
 C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaNegocio\obj\Debug\GHAU_CapaNegocio.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\bin\Debug\GHAU_CapaNegocio.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\bin\Debug\GHAU_CapaNegocio.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\bin\Debug\GHAU_CapaNegocio.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\bin\Debug\GHAU_CapaDatos.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\bin\Debug\GHAU_CapaDatos.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\bin\Debug\GHAU_CapaDatos.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\obj\Debug\GHAU_CapaNegocio.Resources.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\obj\Debug\GHAU_CapaNegocio.vbproj.GenerateResource.Cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\obj\Debug\GHAU_CapaNegocio.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\obj\Debug\GHAU_CapaNegocio.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaNegocio\obj\Debug\GHAU_CapaNegocio.pdb

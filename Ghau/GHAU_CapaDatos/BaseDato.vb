@@ -319,7 +319,7 @@ Public Class BaseDato
             rut_docente = Replace(rut_docente, " ", "")
         End If
 
-        Dim Fecha_inicios As Date = Fecha_inicio
+        Dim Fecha_inicios As Date = CDate(Fecha_inicio)
         Dim temp_fecha_I = Fecha_inicios.ToString("dd-MMM-yyy", _
                   CultureInfo.InvariantCulture)
         Dim fecha_fins As Date = fecha_fin

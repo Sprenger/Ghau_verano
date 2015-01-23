@@ -53,6 +53,7 @@ Partial Class HU3
         Me.BTN_Eliminar = New System.Windows.Forms.Button
         Me.CB_Sala = New System.Windows.Forms.ComboBox
         Me.LBL_dia = New System.Windows.Forms.Label
+        Me.LBL_NRC = New System.Windows.Forms.Label
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -351,11 +352,22 @@ Partial Class HU3
         Me.LBL_dia.Text = "Label13"
         Me.LBL_dia.Visible = False
         '
+        'LBL_NRC
+        '
+        Me.LBL_NRC.AutoSize = True
+        Me.LBL_NRC.Location = New System.Drawing.Point(286, 70)
+        Me.LBL_NRC.Name = "LBL_NRC"
+        Me.LBL_NRC.Size = New System.Drawing.Size(45, 13)
+        Me.LBL_NRC.TabIndex = 35
+        Me.LBL_NRC.Text = "Label13"
+        Me.LBL_NRC.Visible = False
+        '
         'HU3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1227, 92)
+        Me.Controls.Add(Me.LBL_NRC)
         Me.Controls.Add(Me.LBL_dia)
         Me.Controls.Add(Me.CB_Sala)
         Me.Controls.Add(Me.BTN_Eliminar)
@@ -415,4 +427,5 @@ Partial Class HU3
     Friend WithEvents BTN_Eliminar As System.Windows.Forms.Button
     Friend WithEvents CB_Sala As System.Windows.Forms.ComboBox
     Friend WithEvents LBL_dia As System.Windows.Forms.Label
+    Friend WithEvents LBL_NRC As System.Windows.Forms.Label
 End Class

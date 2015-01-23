@@ -61,3 +61,12 @@ C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj
 C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Debug\GHAU_CapaDatos.dll
 C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Debug\GHAU_CapaDatos.xml
 C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Debug\GHAU_CapaDatos.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\bin\Debug\GHAU_CapaDatos.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\bin\Debug\GHAU_CapaDatos.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\bin\Debug\GHAU_CapaDatos.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Debug\GHAU_CapaDatos.Resources.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Debug\GHAU_CapaDatos.vbproj.GenerateResource.Cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Debug\GHAU_CapaDatos.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Debug\GHAU_CapaDatos.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Debug\GHAU_CapaDatos.pdb

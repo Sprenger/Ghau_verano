@@ -120,6 +120,12 @@
     <Compile Include="HU3.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Liberar_HU23.Designer.vb">
+      <DependentUpon>Liberar_HU23.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Liberar_HU23.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Mantenedor_Unidades_Academicas.Designer.vb">
       <DependentUpon>Mantenedor_Unidades_Academicas.vb</DependentUpon>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HU3.resx">
       <DependentUpon>HU3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liberar_HU23.resx">
+      <DependentUpon>Liberar_HU23.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenedor_Unidades_Academicas.resx">
       <DependentUpon>Mantenedor_Unidades_Academicas.vb</DependentUpon>

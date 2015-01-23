@@ -93,3 +93,35 @@ C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHA
 C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.exe
 C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.xml
 C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\bin\Release\GHAU_CapaPresenta.exe.manifest
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\bin\Release\GHAU_CapaPresenta.application
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\bin\Release\GHAU_CapaPresenta.exe
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\bin\Release\GHAU_CapaPresenta.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\bin\Release\GHAU_CapaPresenta.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\bin\Release\GHAU_CapaDatos.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\bin\Release\GHAU_CapaNegocio.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\bin\Release\GHAU_CapaNegocio.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\bin\Release\GHAU_CapaNegocio.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\bin\Release\GHAU_CapaDatos.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\bin\Release\GHAU_CapaDatos.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\ResolveAssemblyReference.cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.evento.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.Grafico.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.G_Usabilidad.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.HU21.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.HU3.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.Liberar_HU23.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.Mantenedor_Unidades_Academicas.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.MODIFICARBETAvb.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.ImportarHorario.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.Form2.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.Form3.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.importar_sala.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.Mantenedor_Programas.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.Resources.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.vbproj.GenerateResource.Cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.exe.manifest
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.application
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.exe
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaPresenta\obj\Release\GHAU_CapaPresenta.pdb

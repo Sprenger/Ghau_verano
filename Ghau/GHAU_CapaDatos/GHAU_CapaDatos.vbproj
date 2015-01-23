@@ -67,6 +67,8 @@
     <Compile Include="coneccion.vb" />
     <Compile Include="Control_BaseDato.vb" />
     <Compile Include="Docente.vb" />
+    <Compile Include="Funciones.vb" />
+    <Compile Include="Horarios.vb" />
     <Compile Include="Ingresar.vb" />
     <Compile Include="LLenadoGrillaHorario.vb" />
     <Compile Include="MantenedorBD.vb" />

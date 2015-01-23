@@ -8,6 +8,8 @@ Public Class MantenedorBD
         cnn = New SqlConnection("Server=" & _nombreservidor_ & ";uid=" & _nombreusuario_ & ";pwd=" & _pass_) 'inicia coneccion
     End Sub
 
+   
+
     Sub IngresarDocentes(ByVal rut As String, ByVal nombre As String, ByVal cargo As String)
         Dim insertar As String = "insert into docentes values('" & Replace(rut.ToUpper, " ", "") & "', '" & nombre.ToUpper & "', '" & cargo.ToUpper & "')"
         Try
@@ -1045,6 +1047,8 @@ Public Class MantenedorBD
     End Function
 
 
+    
+
 
     Function ConsultarCursoMateria() As DataTable
         Dim consulta = "select * from curso_materia"
@@ -1529,6 +1533,27 @@ Public Class MantenedorBD
 
     End Function
 
+    Public Function liberarSala(ByVal nrc, ByVal dia, ByVal tipo_act, ByVal bloque, ByVal fecha_ini, ByVal fecha_fin, ByVal sala)
+        Dim consulta = "insert into Liberar_sala values ('" & nrc.ToString & "','" & dia.ToString & "','" & tipo_act.ToString & "',@fecha_inicio,@fecha_final,'" & bloque.ToString & "','" & sala.ToString & "')"
+
+        Dim cmd As New SqlCommand
+        Dim dt As New DataTable
+        Try
+            cnn.Open()
+            cmd = New SqlCommand(consulta.ToUpper, cnn)
+            cmd.Parameters.AddWithValue("@fecha_inicio", Convert.ToDateTime(fecha_ini.ToString))
+            cmd.Parameters.AddWithValue("@fecha_final", Convert.ToDateTime(fecha_fin.ToString))
+            cmd.ExecuteNonQuery()
+
+
+        Catch ex As Exception
+            'MsgBox("Error al mostrar " + ex.Message)
+
+        Finally
+            cnn.Close()
+        End Try
+    End Function
+
     Public Function consultarProgramas() As DataTable
         Dim consulta = ("select distinct(programa) from Horarios")
         Dim cmd As New SqlCommand
@@ -1731,7 +1756,7 @@ Public Class MantenedorBD
 
 
     Function consultareventos(ByVal nrc As String) As DataTable
-        Dim consulta As String = "select * from horarios where nrc=" & nrc
+        Dim consulta As String = "select * from horarios where nrc='" & nrc & "'"
 
 
         Dim cmd As New SqlCommand

@@ -37,3 +37,16 @@ C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\Tes
 C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\obj\Release\TestProject1.dll
 C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\obj\Release\TestProject1.xml
 C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\TestProject1\obj\Release\TestProject1.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Release\TestProject1.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Release\TestProject1.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Release\TestProject1.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Release\GHAU_CapaDatos.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Release\GHAU_CapaNegocio.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Release\GHAU_CapaNegocio.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Release\GHAU_CapaNegocio.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Release\GHAU_CapaDatos.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\bin\Release\GHAU_CapaDatos.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\obj\Release\TestProject1.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\obj\Release\TestProject1.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\TestProject1\obj\Release\TestProject1.pdb

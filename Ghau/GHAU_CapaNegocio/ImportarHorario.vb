@@ -37,7 +37,7 @@ Public Class ImportarHorario
                                 Dim tempJornada = Mid(Replace(valor(0).ToString, " ", ""), valor(0).ToString.Length)
                                 dthorariodeldia.Rows(j).Item(CInt(horariodelDia.Rows(i).Item(8).ToString) + 1) = tempNRC & "-" & horariodelDia.Rows(i).Item(1) & " " & tempJornada & "++" & valor(1) & "++" & valor(2) & "++" & valor(3) & "++" & valor(4) & "++" & (CInt(valor(5).ToString) + CInt(horariodelDia.Rows(i).Item(7)))
 
-                                Dim c = 1 + 2 + 3
+                                'Dim c = 1 + 2 + 3
 
                             End If
                         Else
@@ -50,7 +50,7 @@ Public Class ImportarHorario
                                 dthorariodeldia.Rows(j).Item(CInt(horariodelDia.Rows(i).Item(8).ToString) + 1) = valor(0) & "-" & horariodelDia.Rows(i).Item(1) & "++" & valor(1) & "++" & valor(2) & "++" & valor(3) & "++" & valor(4) & "++" & (CInt(valor(5).ToString) + CInt(horariodelDia.Rows(i).Item(7)))
                                 Dim k = dthorariodeldia.Rows(j).Item(CInt(horariodelDia.Rows(i).Item(8).ToString) + 1)
 
-                                Dim c = 1 + 2 + 3
+                                'Dim c = 1 + 2 + 3
 
 
                             End If
@@ -388,236 +388,450 @@ Public Class ImportarHorario
         dterrores = dato.Clone
 
         dterrores.Columns.Add("TipoError", Type.GetType("System.String"))
-
+        'Dim 'dt_Choques As New DataTable
+        ''dt_Choques.Columns.Add("NRC", Type.GetType("System.String"))
+        ''dt_Choques.Columns.Add("Descripcion", Type.GetType("System.String"))
         For i = 0 To dato.Rows.Count - 1
-            If dato.Rows(i).Item(20).ToString = " " Then
-                dato.Rows(i).Item(20) = ".OT 0830 - 1920 "
-            End If
-            If dato.Rows(i).Item(24).ToString = " " Or dato.Rows(i).Item(24).ToString.Length < 2 Then
-                dato.Rows(i).Item(24) = "EXTERNA"
-            End If
+4:
+            If dato.Rows(i).Item(3).ToString = "" Or dato.Rows(i).Item(3) Is Nothing Then
 
-            If dato.Rows(i).Item(14).ToString = " " Then
-                dato.Rows(i).Item(24) = " "
-            End If
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee PERIODO"
 
-            'VM-EXTERNA
-            dtHorario.Rows.Add()
-            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = "00000000000000000000" 'lunes
-            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = "00000000000000000000" 'martes
-            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = "00000000000000000000" 'miercoles
-            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = "00000000000000000000" 'jueve
-            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = "00000000000000000000" 'viernes
-            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = "00000000000000000000" 'sab
-            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = "00000000000000000000" 'dom
-            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = "00000000000000000000" 'otro
-            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(30) = dato.Rows(i).Item(15).ToString.ToUpper
-            Dim arr_sala() = Split(Replace(dato.Rows(i).Item(24).ToString, " ", ""), "/")
-            Dim arr_edificio() = Split(Replace(dato.Rows(i).Item(23).ToString, " ", ""), "/")
-            If Mid(Replace(dato.Rows(i).Item(20).ToString, " ", ""), 1, 1) = "/" Then
-                dato.Rows(i).Item(20) = Mid(Replace(dato.Rows(i).Item(20).ToString, " ", ""), 2)
-            End If
+            ElseIf dato.Rows(i).Item(1).ToString = "" Or dato.Rows(i).Item(1) Is Nothing Then
 
-            Dim arr_dia = Split(dato.Rows(i).Item(20).ToString, "/")
-            If arr_dia(0).Length < 6 Then
-                dato.Rows(i).Item(20) = "Vacio"
-                arr_dia(0) = "Vacio"
-            End If
-            'If DBNull.Value.Equals(dato.Rows(i).Item(20)) Then
-            'For x = 0 To dato.Columns.Count - 1
-            If DBNull.Value.Equals(dato.Rows(i).Item(19)) Then
-                dato.Rows(i).Item(19) = " "
-            End If
-            If DBNull.Value.Equals(dato.Rows(i).Item(3)) Or DBNull.Value.Equals(dato.Rows(i).Item(4)) Or DBNull.Value.Equals(dato.Rows(i).Item(8)) Or DBNull.Value.Equals(dato.Rows(i).Item(14)) Or DBNull.Value.Equals(dato.Rows(i).Item(18)) Or DBNull.Value.Equals(dato.Rows(i).Item(19)) Or DBNull.Value.Equals(dato.Rows(i).Item(20)) Then
-                Dim ColumnaVacia As String = " "
-                If DBNull.Value.Equals(dato.Rows(i).Item(3)) Then
-                    ColumnaVacia = "PERIODO"
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee CAMPUS"
+
+            ElseIf dato.Rows(i).Item(2).ToString = "" Or dato.Rows(i).Item(2) Is Nothing Then
+
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee UNIDAD ACADEMICA"
+
+            ElseIf dato.Rows(i).Item(5).ToString = "" Or dato.Rows(i).Item(5) Is Nothing Then
+                Dim kkk = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee CURSO "
+
+                dato.Rows(i).Item(5) = "11"
+                GoTo 4
+
+            ElseIf dato.Rows(i).Item(4).ToString = "" Or dato.Rows(i).Item(4) Is Nothing Then
+
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee MATERIA "
+
+
+            ElseIf dato.Rows(i).Item(7).ToString = "" Or dato.Rows(i).Item(7) Is Nothing Then
+
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee JORNADA "
+            ElseIf dato.Rows(i).Item(33).ToString = "" Or dato.Rows(i).Item(34).ToString = "" Then
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee fecha de inicio o fin"
+
+            ElseIf dato.Rows(i).Item(18).ToString = "" Or dato.Rows(i).Item(18) Is Nothing Then
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee  ACTIVIDAD"
+
+            ElseIf dato.Rows(i).Item(19).ToString = "" Or dato.Rows(i).Item(19) Is Nothing Then
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee  MODALIDAD"
+
+            ElseIf dato.Rows(i).Item(18).ToString = "" Or dato.Rows(i).Item(18) Is Nothing Then
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee Actividad"
+            ElseIf dato.Rows(i).Item(20).ToString = "" Or dato.Rows(i).Item(20) Is Nothing Then
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee HORARIO"
+
+            ElseIf dato.Rows(i).Item(24).ToString = "" Or dato.Rows(i).Item(24) Is Nothing Then
+                'dt_Choques.Rows.Add()
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(0) = dato.Rows(i).Item(8).ToString
+                'dt_Choques.Rows('dt_Choques.Rows.Count - 1).Item(1) = "No posee SALA"
+
+
+            Else
+                If dato.Rows(i).Item(20).ToString = " " Then
+                    dato.Rows(i).Item(20) = ".OT 0830 - 1920 "
                 End If
-                If DBNull.Value.Equals(dato.Rows(i).Item(4)) Then
-                    ColumnaVacia = ColumnaVacia & " " & "MATERIA"
+                If dato.Rows(i).Item(24).ToString = " " Or dato.Rows(i).Item(24).ToString.Length < 2 Then
+                    dato.Rows(i).Item(24) = "EXTERNA"
                 End If
 
-                If DBNull.Value.Equals(dato.Rows(i).Item(8)) Then
-                    ColumnaVacia = ColumnaVacia & " " & "NRC"
+                If dato.Rows(i).Item(14).ToString = " " Then
+                    dato.Rows(i).Item(24) = " "
                 End If
-                If DBNull.Value.Equals(dato.Rows(i).Item(14)) Then
-                    'ColumnaVacia = ColumnaVacia & " " & "RUT DOCENTE"
-                    dato.Rows(i).Item(14) = "0000000000"
-                    GoTo 3
+
+                'VM-EXTERNA
+                dtHorario.Rows.Add()
+                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = "00000000000000000000" 'lunes
+                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = "00000000000000000000" 'martes
+                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = "00000000000000000000" 'miercoles
+                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = "00000000000000000000" 'jueve
+                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = "00000000000000000000" 'viernes
+                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = "00000000000000000000" 'sab
+                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = "00000000000000000000" 'dom
+                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = "00000000000000000000" 'otro
+                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(30) = dato.Rows(i).Item(15).ToString.ToUpper
+                Dim arr_sala() = Split(Replace(dato.Rows(i).Item(24).ToString, " ", ""), "/")
+                Dim arr_edificio() = Split(Replace(dato.Rows(i).Item(23).ToString, " ", ""), "/")
+                If Mid(Replace(dato.Rows(i).Item(20).ToString, " ", ""), 1, 1) = "/" Then
+                    dato.Rows(i).Item(20) = Mid(Replace(dato.Rows(i).Item(20).ToString, " ", ""), 2)
                 End If
-                If DBNull.Value.Equals(dato.Rows(i).Item(18)) Then
-                    ColumnaVacia = ColumnaVacia & " " & "TIPO ACTIVIDAD"
+
+                Dim arr_dia = Split(dato.Rows(i).Item(20).ToString, "/")
+                If arr_dia(0).Length < 6 Then
+                    dato.Rows(i).Item(20) = "Vacio"
+                    arr_dia(0) = "Vacio"
                 End If
+                'If DBNull.Value.Equals(dato.Rows(i).Item(20)) Then
+                'For x = 0 To dato.Columns.Count - 1
                 If DBNull.Value.Equals(dato.Rows(i).Item(19)) Then
-                    ColumnaVacia = ColumnaVacia & " " & "MODALIDAD"
+                    dato.Rows(i).Item(19) = " "
                 End If
-                If DBNull.Value.Equals(dato.Rows(i).Item(20)) Then
-                    If InStr(Replace(dato.Rows(i).Item(24).ToString, " ", ""), "EX") > 0 Then
-                        dato.Rows(i).Item(20) = ".OT 0000-0000"
-                        GoTo 3
-                    Else
-                        ColumnaVacia = ColumnaVacia & " " & "HORARIO"
-
+                If DBNull.Value.Equals(dato.Rows(i).Item(3)) Or DBNull.Value.Equals(dato.Rows(i).Item(4)) Or DBNull.Value.Equals(dato.Rows(i).Item(8)) Or DBNull.Value.Equals(dato.Rows(i).Item(14)) Or DBNull.Value.Equals(dato.Rows(i).Item(18)) Or DBNull.Value.Equals(dato.Rows(i).Item(19)) Or DBNull.Value.Equals(dato.Rows(i).Item(20)) Then
+                    Dim ColumnaVacia As String = " "
+                    If DBNull.Value.Equals(dato.Rows(i).Item(3)) Then
+                        ColumnaVacia = "PERIODO"
                     End If
+                    If DBNull.Value.Equals(dato.Rows(i).Item(4)) Then
+                        ColumnaVacia = ColumnaVacia & " " & "MATERIA"
+                    End If
+
+                    If DBNull.Value.Equals(dato.Rows(i).Item(8)) Then
+                        ColumnaVacia = ColumnaVacia & " " & "NRC"
+                    End If
+                    If DBNull.Value.Equals(dato.Rows(i).Item(14)) Then
+                        'ColumnaVacia = ColumnaVacia & " " & "RUT DOCENTE"
+                        dato.Rows(i).Item(14) = "0000000000"
+                        GoTo 3
+                    End If
+                    If DBNull.Value.Equals(dato.Rows(i).Item(18)) Then
+                        ColumnaVacia = ColumnaVacia & " " & "TIPO ACTIVIDAD"
+                    End If
+                    If DBNull.Value.Equals(dato.Rows(i).Item(19)) Then
+                        ColumnaVacia = ColumnaVacia & " " & "MODALIDAD"
+                    End If
+                    If DBNull.Value.Equals(dato.Rows(i).Item(20)) Then
+                        If InStr(Replace(dato.Rows(i).Item(24).ToString, " ", ""), "EX") > 0 Then
+                            dato.Rows(i).Item(20) = ".OT 0000-0000"
+                            GoTo 3
+                        Else
+                            ColumnaVacia = ColumnaVacia & " " & "HORARIO"
+
+                        End If
+                    End If
+
+
+
+                    dterrores.Rows.Add()
+                    For columnas = 0 To dato.Columns.Count - 1
+                        dterrores.Rows(dterrores.Rows.Count - 1).Item(columnas) = dato.Rows(i).Item(columnas)
+                    Next
+                    dterrores.Rows(dterrores.Rows.Count - 1).Item(dterrores.Columns.Count - 1) = ColumnaVacia
+                    GoTo 1
                 End If
+                'Next
 
-
-
-                dterrores.Rows.Add()
-                For columnas = 0 To dato.Columns.Count - 1
-                    dterrores.Rows(dterrores.Rows.Count - 1).Item(columnas) = dato.Rows(i).Item(columnas)
-                Next
-                dterrores.Rows(dterrores.Rows.Count - 1).Item(dterrores.Columns.Count - 1) = ColumnaVacia
-                GoTo 1
-            End If
-            'Next
-
-            'Dim iiii = CInt(dato.Rows(i).Item(8))
+                'Dim iiii = CInt(dato.Rows(i).Item(8))
 3:
-            If InStr(dato.Rows(i).Item(24).ToString, "/") > 0 Then 'osea es una sala sal606/sal608
+                If InStr(dato.Rows(i).Item(24).ToString, "/") > 0 Then 'osea es una sala sal606/sal608
 
-                For j = 0 To arr_dia.Length - 1
-                    ' Dim largo As Integer = 
+                    For j = 0 To arr_dia.Length - 1
+                        ' Dim largo As Integer = 
 
-                    If dtHorario.Rows(dtHorario.Rows.Count - 1).Item(7).ToString = arr_edificio(j) & "-" & arr_sala(j) Or dtHorario.Rows(dtHorario.Rows.Count - 1).Item(7).ToString = "" Then
-                        Dim dd = dato.Rows(i).Item(20).ToString
-                        For x = 0 To CInt(Replace(arr_dia(j), " ", "").Length / 12 - 1)
-                            Dim puntocontrolfinalFor = CInt(Replace(arr_dia(j), " ", "").Length / 12 - 1)
-                            Dim temp_horario = Mid(Replace(arr_dia(j).ToString, " ", ""), ((12 * x) + 1), 12)
-                            Dim temp_bloque = Modularizacion(Mid(temp_horario, 4, 4), Mid(temp_horario, 9, 4), Replace(dato.Rows(i).Item(7).ToString, " ", "")) 'obtengo el bloque
-                            If temp_bloque = "" Or temp_bloque = "FALLA" Then
-                                dtHorario.Rows.RemoveAt(dtHorario.Rows.Count - 1)
+                        If dtHorario.Rows(dtHorario.Rows.Count - 1).Item(7).ToString = arr_edificio(j) & "-" & arr_sala(j) Or dtHorario.Rows(dtHorario.Rows.Count - 1).Item(7).ToString = "" Then
+                            Dim dd = dato.Rows(i).Item(20).ToString
+                            For x = 0 To CInt(Replace(arr_dia(j), " ", "").Length / 12 - 1)
+                                Dim puntocontrolfinalFor = CInt(Replace(arr_dia(j), " ", "").Length / 12 - 1)
+                                Dim temp_horario = Mid(Replace(arr_dia(j).ToString, " ", ""), ((12 * x) + 1), 12)
+                                Dim temp_bloque = Modularizacion(Mid(temp_horario, 4, 4), Mid(temp_horario, 9, 4), Replace(dato.Rows(i).Item(7).ToString, " ", "")) 'obtengo el bloque
+                                If temp_bloque = "" Or temp_bloque = "FALLA" Then
+                                    dtHorario.Rows.RemoveAt(dtHorario.Rows.Count - 1)
 
-                                dterrores.Rows.Add()
-                                For columnas = 0 To dato.Columns.Count - 1
-                                    dterrores.Rows(dterrores.Rows.Count - 1).Item(columnas) = dato.Rows(i).Item(columnas)
+                                    dterrores.Rows.Add()
+                                    For columnas = 0 To dato.Columns.Count - 1
+                                        dterrores.Rows(dterrores.Rows.Count - 1).Item(columnas) = dato.Rows(i).Item(columnas)
+                                    Next
+                                    dterrores.Rows(dterrores.Rows.Count - 1).Item(dterrores.Columns.Count - 1) = "revisar columna 'horario'"
+                                    GoTo 1
+                                End If
+
+                                Dim temp_dia = Mid(temp_horario.ToUpper, 1, 3) 'obtengo el dia
+                                Dim modulo As String = ""
+                                Select Case temp_dia.ToUpper
+                                    Case ".LU"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22).ToString
+                                    Case ".MA"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23).ToString
+                                    Case ".MI"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24).ToString
+                                    Case ".JU"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25).ToString
+                                    Case ".VI"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26).ToString
+                                    Case ".SA"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27).ToString
+                                    Case ".DO"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28).ToString
+                                    Case Else
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29).ToString
+                                End Select
+                                Dim temp_arr_horario() As Char = modulo.ToCharArray
+                                Try
+                                    For k = CInt(Mid(temp_bloque, 1, 2)) - 1 To CInt(Mid(temp_bloque, 4)) - 1
+                                        temp_arr_horario(k) = "1"
+                                    Next
+                                Catch ex As Exception
+                                    dtHorario.Rows.RemoveAt(dtHorario.Rows.Count - 1)
+
+                                    dterrores.Rows.Add()
+                                    For columnas = 0 To dato.Columns.Count - 1
+                                        dterrores.Rows(dterrores.Rows.Count - 1).Item(columnas) = dato.Rows(i).Item(columnas)
+                                    Next
+                                    dterrores.Rows(dterrores.Rows.Count - 1).Item(dterrores.Columns.Count - 1) = "revisar columna 'horario'"
+                                    GoTo 1
+
+                                End Try
+                                Dim bloque As String = ""
+                                For k = 0 To temp_arr_horario.Length - 1
+                                    bloque = bloque & temp_arr_horario(k)
                                 Next
-                                dterrores.Rows(dterrores.Rows.Count - 1).Item(dterrores.Columns.Count - 1) = "revisar columna 'horario'"
-                                GoTo 1
-                            End If
+                                Select Case temp_dia.ToUpper
+                                    Case ".LU"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = bloque
+                                    Case ".MA"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = bloque
+                                    Case ".MI"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = bloque
+                                    Case ".JU"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = bloque
+                                    Case ".VI"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = bloque
+                                    Case ".SA"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = bloque
+                                    Case ".DO"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = bloque
+                                    Case Else
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = bloque
+                                End Select
+                                'dtHorario.Rows.Add()
+                                Dim dts = dtHorario
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(0) = DateTime.Now() '.ToShortDateString()
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(1) = dato.Rows(i).Item(21).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(2) = dato.Rows(i).Item(8).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(3) = dato.Rows(i).Item(6).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(4) = dato.Rows(i).Item(9).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(5) = dato.Rows(i).Item(10).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(6) = dato.Rows(i).Item(11).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(7) = arr_edificio(j) & "-" & arr_sala(j)
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(8) = dato.Rows(i).Item(7).ToString
 
-                            Dim temp_dia = Mid(temp_horario.ToUpper, 1, 3) 'obtengo el dia
-                            Dim modulo As String = ""
-                            Select Case temp_dia.ToUpper
-                                Case ".LU"
-                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22).ToString
-                                Case ".MA"
-                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23).ToString
-                                Case ".MI"
-                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24).ToString
-                                Case ".JU"
-                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25).ToString
-                                Case ".VI"
-                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26).ToString
-                                Case ".SA"
-                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27).ToString
-                                Case ".DO"
-                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28).ToString
-                                Case Else
-                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29).ToString
-                            End Select
-                            Dim temp_arr_horario() As Char = modulo.ToCharArray
-                            Try
-                                For k = CInt(Mid(temp_bloque, 1, 2)) - 1 To CInt(Mid(temp_bloque, 4)) - 1
-                                    temp_arr_horario(k) = "1"
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(31) = dato.Rows(i).Item(30).ToString
+
+                                Dim numero As String = ""
+                                If dato.Rows(i).Item(5).ToString.Length = 2 Then
+                                    numero = "0" & dato.Rows(i).Item(5).ToString
+                                ElseIf dato.Rows(i).Item(5).ToString.Length >= 3 Then
+                                    numero = dato.Rows(i).Item(5).ToString
+                                ElseIf dato.Rows(i).Item(5).ToString.Length = 1 Then
+
+                                    numero = "00" & dato.Rows(i).Item(5).ToString
+
+                                End If
+
+
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(9) = dato.Rows(i).Item(4).ToString & numero
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(10) = dato.Rows(i).Item(3).ToString
+                                Dim Isra = dato.Rows(i).Item(18).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(11) = dato.Rows(i).Item(18).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(12) = dato.Rows(i).Item(1).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(13) = dato.Rows(i).Item(14).ToString
+                                Dim MODA = dato.Rows(i).Item(19).ToString
+                                Dim NRC = dato.Rows(i).Item(8).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(14) = dato.Rows(i).Item(19).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(15) = dato.Rows(i).Item(2).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(16) = dato.Rows(i).Item(33).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(17) = dato.Rows(i).Item(34).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(18) = dato.Rows(i).Item(16).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(19) = "D"
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(20) = dato.Rows(i).Item(26).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(21) = dato.Rows(i).Item(29).ToString
+
+
+
+
+
+
+                            Next 'termino de recorrer arr_dia
+
+                        Else
+                            dtHorario.Rows.Add()
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = "00000000000000000000" 'lunes
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = "00000000000000000000" 'martes
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = "00000000000000000000" 'miercoles
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = "00000000000000000000" 'jueve
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = "00000000000000000000" 'viernes
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = "00000000000000000000" 'sab
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = "00000000000000000000" 'dom
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = "00000000000000000000" 'otro
+                            For x = 0 To CInt(Replace(arr_dia(j), " ", "").Length / 12 - 1)
+
+                                ' Dim puntocontrolfinalFor = CInt(Replace(arr_dia(j), " ", "").Length / 12 - 1)
+                                Dim temp_horario = Mid(Replace(arr_dia(j).ToString, " ", ""), ((12 * x) + 1), 12)
+                                Dim temp_bloque = Modularizacion(Mid(temp_horario, 4, 4), Mid(temp_horario, 9, 4), Replace(dato.Rows(i).Item(7).ToString, " ", "")) 'obtengo el bloque
+                                If temp_bloque = "" Or temp_bloque = "FALLA" Then
+                                    dtHorario.Rows.RemoveAt(dtHorario.Rows.Count - 1)
+
+                                    dterrores.Rows.Add()
+                                    For columnas = 0 To dato.Columns.Count - 1
+                                        dterrores.Rows(dterrores.Rows.Count - 1).Item(columnas) = dato.Rows(i).Item(columnas)
+                                    Next
+                                    dterrores.Rows(dterrores.Rows.Count - 1).Item(dterrores.Columns.Count - 1) = "revisar columna 'horario'"
+                                    GoTo 1
+                                End If
+                                Dim temp_dia = Mid(temp_horario.ToUpper, 1, 3) 'obtengo el dia
+                                Dim modulo As String = ""
+                                Select Case temp_dia.ToUpper
+                                    Case ".LU"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22)
+                                    Case ".MA"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23)
+                                    Case ".MI"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24)
+                                    Case ".JU"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25)
+                                    Case ".VI"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26)
+                                    Case ".SA"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27)
+                                    Case ".DO"
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28)
+                                    Case Else
+                                        modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29)
+                                End Select
+                                Dim temp_arr_horario() As Char = modulo.ToCharArray
+                                Try
+
+                                    For k = CInt(Mid(temp_bloque, 1, 2)) - 1 To CInt(Mid(temp_bloque, 4)) - 1
+                                        temp_arr_horario(k) = "1"
+                                    Next
+                                Catch
+
+                                End Try
+                                Dim bloque As String = ""
+                                For k = 0 To temp_arr_horario.Length - 1
+                                    bloque = bloque & temp_arr_horario(k)
                                 Next
-                            Catch ex As Exception
-                                dtHorario.Rows.RemoveAt(dtHorario.Rows.Count - 1)
+                                Select Case temp_dia.ToUpper
+                                    Case ".LU"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = bloque
+                                    Case ".MA"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = bloque
+                                    Case ".MI"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = bloque
+                                    Case ".JU"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = bloque
+                                    Case ".VI"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = bloque
+                                    Case ".SA"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = bloque
+                                    Case ".DO"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = bloque
+                                    Case Else
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = bloque
+                                End Select
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(7) = arr_edificio(j) & "-" & arr_sala(j)
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(2) = dato.Rows(i).Item(8).ToString
 
-                                dterrores.Rows.Add()
-                                For columnas = 0 To dato.Columns.Count - 1
-                                    dterrores.Rows(dterrores.Rows.Count - 1).Item(columnas) = dato.Rows(i).Item(columnas)
-                                Next
-                                dterrores.Rows(dterrores.Rows.Count - 1).Item(dterrores.Columns.Count - 1) = "revisar columna 'horario'"
-                                GoTo 1
-
-                            End Try
-                            Dim bloque As String = ""
-                            For k = 0 To temp_arr_horario.Length - 1
-                                bloque = bloque & temp_arr_horario(k)
-                            Next
-                            Select Case temp_dia.ToUpper
-                                Case ".LU"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = bloque
-                                Case ".MA"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = bloque
-                                Case ".MI"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = bloque
-                                Case ".JU"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = bloque
-                                Case ".VI"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = bloque
-                                Case ".SA"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = bloque
-                                Case ".DO"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = bloque
-                                Case Else
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = bloque
-                            End Select
-                            'dtHorario.Rows.Add()
-                            Dim dts = dtHorario
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(0) = DateTime.Now() '.ToShortDateString()
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(1) = dato.Rows(i).Item(21).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(2) = dato.Rows(i).Item(8).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(3) = dato.Rows(i).Item(6).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(4) = dato.Rows(i).Item(9).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(5) = dato.Rows(i).Item(10).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(6) = dato.Rows(i).Item(11).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(7) = arr_edificio(j) & "-" & arr_sala(j)
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(8) = dato.Rows(i).Item(7).ToString
-
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(31) = dato.Rows(i).Item(30).ToString
-
-                            Dim numero As String = ""
-                            If dato.Rows(i).Item(5).ToString.Length = 2 Then
-                                numero = "0" & dato.Rows(i).Item(5).ToString
-                            ElseIf dato.Rows(i).Item(5).ToString.Length >= 3 Then
-                                numero = dato.Rows(i).Item(5).ToString
-                            ElseIf dato.Rows(i).Item(5).ToString.Length = 1 Then
-
-                                numero = "00" & dato.Rows(i).Item(5).ToString
-
-                            End If
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(11) = dato.Rows(i).Item(18).ToString
 
 
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(9) = dato.Rows(i).Item(4).ToString & numero
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(10) = dato.Rows(i).Item(3).ToString
-                            Dim Isra = dato.Rows(i).Item(18).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(11) = dato.Rows(i).Item(18).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(12) = dato.Rows(i).Item(1).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(13) = dato.Rows(i).Item(14).ToString
-                            Dim MODA = dato.Rows(i).Item(19).ToString
-                            Dim NRC = dato.Rows(i).Item(8).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(14) = dato.Rows(i).Item(19).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(15) = dato.Rows(i).Item(2).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(16) = dato.Rows(i).Item(33).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(17) = dato.Rows(i).Item(34).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(18) = dato.Rows(i).Item(16).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(19) = "D"
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(20) = dato.Rows(i).Item(26).ToString
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(21) = dato.Rows(i).Item(29).ToString
+
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(31) = dato.Rows(i).Item(30).ToString
+
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(0) = DateTime.Now() '.ToShortDateString()
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(1) = dato.Rows(i).Item(21).ToString
+                                'Dim op = dato.Rows(i).Item(21).ToString
+
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(3) = dato.Rows(i).Item(6).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(4) = dato.Rows(i).Item(9).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(5) = dato.Rows(i).Item(10).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(6) = dato.Rows(i).Item(11).ToString
+
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(8) = dato.Rows(i).Item(7).ToString
+                                Dim numero As String = ""
+                                'If CInt(dato.Rows(i).Item(5).ToString) >= 10 And CInt(dato.Rows(i).Item(5).ToString) < 100 Then
+                                '    numero = "0" & dato.Rows(i).Item(5).ToString
+                                'ElseIf CInt(dato.Rows(i).Item(5).ToString) >= 100 Then
+                                '    numero = dato.Rows(i).Item(5).ToString
+                                'ElseIf CInt(dato.Rows(i).Item(5).ToString) < 10 Then
+
+                                '    numero = "00" & dato.Rows(i).Item(5).ToString
+
+                                'End If
+                                If dato.Rows(i).Item(5).ToString.Length = 2 Then
+                                    numero = "0" & dato.Rows(i).Item(5).ToString
+                                ElseIf dato.Rows(i).Item(5).ToString.Length >= 3 Then
+                                    numero = dato.Rows(i).Item(5).ToString
+                                ElseIf dato.Rows(i).Item(5).ToString.Length = 1 Then
+
+                                    numero = "00" & dato.Rows(i).Item(5).ToString
+
+                                End If
+
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(9) = dato.Rows(i).Item(4).ToString & numero
+
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(10) = dato.Rows(i).Item(3).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(12) = dato.Rows(i).Item(1).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(13) = dato.Rows(i).Item(14).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(14) = dato.Rows(i).Item(19).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(15) = dato.Rows(i).Item(2).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(16) = dato.Rows(i).Item(33).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(17) = dato.Rows(i).Item(34).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(18) = dato.Rows(i).Item(16).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(19) = "D"
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(20) = dato.Rows(i).Item(26).ToString
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(21) = dato.Rows(i).Item(29).ToString
 
 
 
 
+                            Next 'termino de recorrer arr_dia
 
 
-                        Next 'termino de recorrer arr_dia
+                        End If
 
-                    Else
-                        dtHorario.Rows.Add()
-                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = "00000000000000000000" 'lunes
-                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = "00000000000000000000" 'martes
-                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = "00000000000000000000" 'miercoles
-                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = "00000000000000000000" 'jueve
-                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = "00000000000000000000" 'viernes
-                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = "00000000000000000000" 'sab
-                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = "00000000000000000000" 'dom
-                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = "00000000000000000000" 'otro
-                        For x = 0 To CInt(Replace(arr_dia(j), " ", "").Length / 12 - 1)
 
+
+
+                    Next
+
+
+                Else
+
+                    If dato.Rows(i).Item(20).ToString.Length > 12 Then
+                        Dim Control_maximoFor = CInt((Replace(dato.Rows(i).Item(20).ToString, " ", "").Length / 12) - 1)
+                        'Dim ASD = dato.Rows(i).Item(20)
+                        For j = 0 To CInt((Replace(dato.Rows(i).Item(20).ToString, " ", "").Length / 12) - 1)
+                            Dim temp_horario = Mid(Replace(dato.Rows(i).Item(20).ToString, " ", ""), ((j * 12) + 1), 12)
                             ' Dim puntocontrolfinalFor = CInt(Replace(arr_dia(j), " ", "").Length / 12 - 1)
-                            Dim temp_horario = Mid(Replace(arr_dia(j).ToString, " ", ""), ((12 * x) + 1), 12)
+                            Dim NOMBRE = dato.Columns(7).ColumnName
+                            Dim NRC = dato.Rows(i).Item(8).ToString
+                            Dim jor = dato.Rows(i).Item(7).ToString
+
                             Dim temp_bloque = Modularizacion(Mid(temp_horario, 4, 4), Mid(temp_horario, 9, 4), Replace(dato.Rows(i).Item(7).ToString, " ", "")) 'obtengo el bloque
                             If temp_bloque = "" Or temp_bloque = "FALLA" Then
                                 dtHorario.Rows.RemoveAt(dtHorario.Rows.Count - 1)
@@ -649,77 +863,89 @@ Public Class ImportarHorario
                                 Case Else
                                     modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29)
                             End Select
+                            'Dim isra = dato.Rows(i).Item(8).ToString
+
+
+
                             Dim temp_arr_horario() As Char = modulo.ToCharArray
-
-                            For k = CInt(Mid(temp_bloque, 1, 2)) - 1 To CInt(Mid(temp_bloque, 4)) - 1
-                                temp_arr_horario(k) = "1"
-                            Next
                             Dim bloque As String = ""
-                            For k = 0 To temp_arr_horario.Length - 1
-                                bloque = bloque & temp_arr_horario(k)
-                            Next
-                            Select Case temp_dia.ToUpper
-                                Case ".LU"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = bloque
-                                Case ".MA"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = bloque
-                                Case ".MI"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = bloque
-                                Case ".JU"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = bloque
-                                Case ".VI"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = bloque
-                                Case ".SA"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = bloque
-                                Case ".DO"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = bloque
-                                Case Else
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = bloque
-                            End Select
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(7) = arr_edificio(j) & "-" & arr_sala(j)
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(2) = dato.Rows(i).Item(8).ToString
+                            Try
+                                'If temp_bloque = "00-00" Then
 
+                                '    bloque = modulo
+                                'Else
+                                For k = CInt(Mid(temp_bloque, 1, 2)) - 1 To CInt(Mid(temp_bloque, 4)) - 1
+                                    temp_arr_horario(k) = "1"
+                                Next
+
+
+                                For k = 0 To temp_arr_horario.Length - 1
+                                    bloque = bloque & temp_arr_horario(k)
+                                Next
+                                'End If
+                                Select Case temp_dia.ToUpper
+                                    Case ".LU"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = bloque
+                                    Case ".MA"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = bloque
+                                    Case ".MI"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = bloque
+                                    Case ".JU"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = bloque
+                                    Case ".VI"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = bloque
+                                    Case ".SA"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = bloque
+                                    Case ".DO"
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = bloque
+                                    Case Else
+                                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = bloque
+                                End Select
+                            Catch ex As Exception
+                                'dtHorario.Rows.RemoveAt(dtHorario.Rows.Count - 1)
+                                Dim a = 1 + 2
+                            End Try
+
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(7) = dato.Rows(i).Item(23).ToString & "-" & dato.Rows(i).Item(24).ToString
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(2) = dato.Rows(i).Item(8).ToString
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(11) = dato.Rows(i).Item(18).ToString
 
 
 
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(31) = dato.Rows(i).Item(30).ToString
 
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(0) = DateTime.Now() '.ToShortDateString()
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(1) = dato.Rows(i).Item(21).ToString
-                            'Dim op = dato.Rows(i).Item(21).ToString
-
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(3) = dato.Rows(i).Item(6).ToString
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(4) = dato.Rows(i).Item(9).ToString
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(5) = dato.Rows(i).Item(10).ToString
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(6) = dato.Rows(i).Item(11).ToString
-
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(8) = dato.Rows(i).Item(7).ToString
-                            Dim numero As String = ""
-                            'If CInt(dato.Rows(i).Item(5).ToString) >= 10 And CInt(dato.Rows(i).Item(5).ToString) < 100 Then
-                            '    numero = "0" & dato.Rows(i).Item(5).ToString
-                            'ElseIf CInt(dato.Rows(i).Item(5).ToString) >= 100 Then
-                            '    numero = dato.Rows(i).Item(5).ToString
-                            'ElseIf CInt(dato.Rows(i).Item(5).ToString) < 10 Then
-
-                            '    numero = "00" & dato.Rows(i).Item(5).ToString
+                            Dim codigo As String = dato.Rows(i).Item(8).ToString
+                            Dim Nrrc = dato.Rows(i).Item(5).ToString.Length
+                            'If dato.Rows(i).Item(5).ToString.Length >= 10 And dato.Rows(i).Item(5).ToString.Length < 100 Then
+                            '    codigo = "0" & dato.Rows(i).Item(5).ToString
+                            'ElseIf dato.Rows(i).Item(5).ToString.Length >= 100 Then
+                            '    codigo = dato.Rows(i).Item(5).ToString
+                            'ElseIf dato.Rows(i).Item(5).ToString.Length < 10 Then
+                            '    codigo = "00" & dato.Rows(i).Item(5).ToString
 
                             'End If
                             If dato.Rows(i).Item(5).ToString.Length = 2 Then
-                                numero = "0" & dato.Rows(i).Item(5).ToString
+                                codigo = "0" & dato.Rows(i).Item(5).ToString
                             ElseIf dato.Rows(i).Item(5).ToString.Length >= 3 Then
-                                numero = dato.Rows(i).Item(5).ToString
+                                codigo = dato.Rows(i).Item(5).ToString
                             ElseIf dato.Rows(i).Item(5).ToString.Length = 1 Then
 
-                                numero = "00" & dato.Rows(i).Item(5).ToString
+                                codigo = "00" & dato.Rows(i).Item(5).ToString
 
                             End If
 
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(9) = dato.Rows(i).Item(4).ToString & numero
-
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(9) = dato.Rows(i).Item(4).ToString & codigo
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(10) = dato.Rows(i).Item(3).ToString
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(12) = dato.Rows(i).Item(1).ToString
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(13) = dato.Rows(i).Item(14).ToString
+
+                            Dim ds = dtHorario
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(14) = dato.Rows(i).Item(19).ToString
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(15) = dato.Rows(i).Item(2).ToString
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(16) = dato.Rows(i).Item(33).ToString
@@ -730,109 +956,91 @@ Public Class ImportarHorario
                             dtHorario.Rows(dtHorario.Rows.Count - 1).Item(21) = dato.Rows(i).Item(29).ToString
 
 
+                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(31) = dato.Rows(i).Item(30).ToString
+
+                        Next
+
+                        Dim horario = ""
+                    Else
 
 
-                        Next 'termino de recorrer arr_dia
-
-
-                    End If
-
-
-
-
-                Next
-
-
-            Else
-
-                If dato.Rows(i).Item(20).ToString.Length > 12 Then
-                    Dim Control_maximoFor = CInt((Replace(dato.Rows(i).Item(20).ToString, " ", "").Length / 12) - 1)
-                    'Dim ASD = dato.Rows(i).Item(20)
-                    For j = 0 To CInt((Replace(dato.Rows(i).Item(20).ToString, " ", "").Length / 12) - 1)
-                        Dim temp_horario = Mid(Replace(dato.Rows(i).Item(20).ToString, " ", ""), ((j * 12) + 1), 12)
-                        ' Dim puntocontrolfinalFor = CInt(Replace(arr_dia(j), " ", "").Length / 12 - 1)
-                        Dim NOMBRE = dato.Columns(7).ColumnName
-                        Dim NRC = dato.Rows(i).Item(8).ToString
-                        Dim jor = dato.Rows(i).Item(7).ToString
-
-                        Dim temp_bloque = Modularizacion(Mid(temp_horario, 4, 4), Mid(temp_horario, 9, 4), Replace(dato.Rows(i).Item(7).ToString, " ", "")) 'obtengo el bloque
-                        If temp_bloque = "" Or temp_bloque = "FALLA" Then
-                            dtHorario.Rows.RemoveAt(dtHorario.Rows.Count - 1)
-
-                            dterrores.Rows.Add()
-                            For columnas = 0 To dato.Columns.Count - 1
-                                dterrores.Rows(dterrores.Rows.Count - 1).Item(columnas) = dato.Rows(i).Item(columnas)
-                            Next
-                            dterrores.Rows(dterrores.Rows.Count - 1).Item(dterrores.Columns.Count - 1) = "revisar columna 'horario'"
-                            GoTo 1
-                        End If
+                        Dim temp_horario = Mid(Replace(dato.Rows(i).Item(20).ToString, " ", ""), (1), 12)
                         Dim temp_dia = Mid(temp_horario.ToUpper, 1, 3) 'obtengo el dia
-                        Dim modulo As String = ""
-                        Select Case temp_dia.ToUpper
-                            Case ".LU"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22)
-                            Case ".MA"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23)
-                            Case ".MI"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24)
-                            Case ".JU"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25)
-                            Case ".VI"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26)
-                            Case ".SA"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27)
-                            Case ".DO"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28)
-                            Case Else
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29)
-                        End Select
-                        'Dim isra = dato.Rows(i).Item(8).ToString
+                        Dim nrc = dato.Rows(i).Item(8).ToString
+                        Dim bloque = ""
 
+                        If temp_horario.Length - 1 = -1 Or dato.Rows(i).Item(20).ToString.Length < 11 Then
+                            bloque = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28)
+                            If temp_dia = Nothing Then
+                                temp_dia = "otro"
+                            End If
+                        Else
+                            Dim temp_bloque = Modularizacion(Mid(temp_horario, 4, 4), Mid(temp_horario, 9, 4), Replace(dato.Rows(i).Item(7).ToString, " ", "")) 'obtengo el bloque
+                            If temp_bloque = "" Or temp_bloque = "FALLA" Then
+                                dtHorario.Rows.RemoveAt(dtHorario.Rows.Count - 1)
 
+                                dterrores.Rows.Add()
+                                For columnas = 0 To dato.Columns.Count - 1
+                                    dterrores.Rows(dterrores.Rows.Count - 1).Item(columnas) = dato.Rows(i).Item(columnas)
+                                Next
+                                dterrores.Rows(dterrores.Rows.Count - 1).Item(dterrores.Columns.Count - 1) = "revisar columna 'horario'"
+                                GoTo 1
+                            End If
+                            ' Dim temp_dia = Mid(temp_horario.ToUpper, 1, 3) 'obtengo el dia
+                            Dim modulo As String = ""
+                            Select Case temp_dia.ToUpper
+                                Case ".LU"
+                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22)
+                                Case ".MA"
+                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23)
+                                Case ".MI"
+                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24)
+                                Case ".JU"
+                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25)
+                                Case ".VI"
+                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26)
+                                Case ".SA"
+                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27)
+                                Case ".DO"
+                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28)
+                                Case Else
+                                    modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29)
+                            End Select
 
-                        Dim temp_arr_horario() As Char = modulo.ToCharArray
-                        Dim bloque As String = ""
-                        Try
-                            'If temp_bloque = "00-00" Then
-
-                            '    bloque = modulo
-                            'Else
+                            Dim temp_arr_horario() As Char = modulo.ToCharArray
+                            Dim a = temp_bloque
                             For k = CInt(Mid(temp_bloque, 1, 2)) - 1 To CInt(Mid(temp_bloque, 4)) - 1
                                 temp_arr_horario(k) = "1"
                             Next
-
-
+                            'Dim bloque As String = ""
                             For k = 0 To temp_arr_horario.Length - 1
                                 bloque = bloque & temp_arr_horario(k)
                             Next
-                            'End If
-                            Select Case temp_dia.ToUpper
-                                Case ".LU"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = bloque
-                                Case ".MA"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = bloque
-                                Case ".MI"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = bloque
-                                Case ".JU"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = bloque
-                                Case ".VI"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = bloque
-                                Case ".SA"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = bloque
-                                Case ".DO"
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = bloque
-                                Case Else
-                                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = bloque
-                            End Select
-                        Catch ex As Exception
-                            'dtHorario.Rows.RemoveAt(dtHorario.Rows.Count - 1)
-                            Dim a = 1 + 2
-                        End Try
+                        End If
+                        Select Case temp_dia.ToUpper
+                            Case ".LU"
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = bloque
+                            Case ".MA"
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = bloque
+                            Case ".MI"
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = bloque
+                            Case ".JU"
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = bloque
+                            Case ".VI"
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = bloque
+                            Case ".SA"
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = bloque
+                            Case ".DO"
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = bloque
+                            Case Else
+                                dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = bloque
+                        End Select
+
 
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(7) = dato.Rows(i).Item(23).ToString & "-" & dato.Rows(i).Item(24).ToString
+
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(2) = dato.Rows(i).Item(8).ToString
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(11) = dato.Rows(i).Item(18).ToString
-
 
 
 
@@ -843,32 +1051,25 @@ Public Class ImportarHorario
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(5) = dato.Rows(i).Item(10).ToString
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(6) = dato.Rows(i).Item(11).ToString
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(8) = dato.Rows(i).Item(7).ToString
-                        Dim codigo As String = dato.Rows(i).Item(8).ToString
-                        Dim Nrrc = dato.Rows(i).Item(5).ToString.Length
-                        'If dato.Rows(i).Item(5).ToString.Length >= 10 And dato.Rows(i).Item(5).ToString.Length < 100 Then
-                        '    codigo = "0" & dato.Rows(i).Item(5).ToString
-                        'ElseIf dato.Rows(i).Item(5).ToString.Length >= 100 Then
-                        '    codigo = dato.Rows(i).Item(5).ToString
-                        'ElseIf dato.Rows(i).Item(5).ToString.Length < 10 Then
-                        '    codigo = "00" & dato.Rows(i).Item(5).ToString
+                        Dim numero As String = ""
 
-                        'End If
-                        If dato.Rows(i).Item(5).ToString.Length = 2 Then
-                            codigo = "0" & dato.Rows(i).Item(5).ToString
-                        ElseIf dato.Rows(i).Item(5).ToString.Length >= 3 Then
-                            codigo = dato.Rows(i).Item(5).ToString
-                        ElseIf dato.Rows(i).Item(5).ToString.Length = 1 Then
+                        If dato.Rows(i).Item(5).ToString = "" Then
+                            numero = "000"
+                        Else
+                            If CInt(dato.Rows(i).Item(5).ToString) >= 10 And CInt(dato.Rows(i).Item(5).ToString) < 100 Then
+                                numero = "0" & dato.Rows(i).Item(5).ToString
+                            ElseIf CInt(dato.Rows(i).Item(5).ToString) < 10 Then
+                                numero = "00" & dato.Rows(i).Item(5).ToString
+                            ElseIf CInt(dato.Rows(i).Item(5).ToString) >= 100 Then
+                                numero = dato.Rows(i).Item(5).ToString
 
-                            codigo = "00" & dato.Rows(i).Item(5).ToString
-
+                            End If
                         End If
-
-                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(9) = dato.Rows(i).Item(4).ToString & codigo
+                        dtHorario.Rows(dtHorario.Rows.Count - 1).Item(9) = dato.Rows(i).Item(4).ToString & numero
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(10) = dato.Rows(i).Item(3).ToString
+                        'Dim tempnrc = dato.Rows(i).Item(8).ToString
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(12) = dato.Rows(i).Item(1).ToString
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(13) = dato.Rows(i).Item(14).ToString
-
-                        Dim ds = dtHorario
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(14) = dato.Rows(i).Item(19).ToString
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(15) = dato.Rows(i).Item(2).ToString
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(16) = dato.Rows(i).Item(33).ToString
@@ -877,136 +1078,14 @@ Public Class ImportarHorario
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(19) = "D"
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(20) = dato.Rows(i).Item(26).ToString
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(21) = dato.Rows(i).Item(29).ToString
-
-
                         dtHorario.Rows(dtHorario.Rows.Count - 1).Item(31) = dato.Rows(i).Item(30).ToString
 
-                    Next
-
-                    Dim horario = ""
-                Else
-
-
-                    Dim temp_horario = Mid(Replace(dato.Rows(i).Item(20).ToString, " ", ""), (1), 12)
-                    Dim temp_dia = Mid(temp_horario.ToUpper, 1, 3) 'obtengo el dia
-                    Dim nrc = dato.Rows(i).Item(8).ToString
-                    Dim bloque = ""
-
-                    If temp_horario.Length - 1 = -1 Or dato.Rows(i).Item(20).ToString.Length < 11 Then
-                        bloque = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28)
-                        If temp_dia = Nothing Then
-                            temp_dia = "otro"
-                        End If
-                    Else
-                        Dim temp_bloque = Modularizacion(Mid(temp_horario, 4, 4), Mid(temp_horario, 9, 4), Replace(dato.Rows(i).Item(7).ToString, " ", "")) 'obtengo el bloque
-                        If temp_bloque = "" Or temp_bloque = "FALLA" Then
-                            dtHorario.Rows.RemoveAt(dtHorario.Rows.Count - 1)
-
-                            dterrores.Rows.Add()
-                            For columnas = 0 To dato.Columns.Count - 1
-                                dterrores.Rows(dterrores.Rows.Count - 1).Item(columnas) = dato.Rows(i).Item(columnas)
-                            Next
-                            dterrores.Rows(dterrores.Rows.Count - 1).Item(dterrores.Columns.Count - 1) = "revisar columna 'horario'"
-                            GoTo 1
-                        End If
-                        ' Dim temp_dia = Mid(temp_horario.ToUpper, 1, 3) 'obtengo el dia
-                        Dim modulo As String = ""
-                        Select Case temp_dia.ToUpper
-                            Case ".LU"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22)
-                            Case ".MA"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23)
-                            Case ".MI"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24)
-                            Case ".JU"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25)
-                            Case ".VI"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26)
-                            Case ".SA"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27)
-                            Case ".DO"
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28)
-                            Case Else
-                                modulo = dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29)
-                        End Select
-
-                        Dim temp_arr_horario() As Char = modulo.ToCharArray
-                        Dim a = temp_bloque
-                        For k = CInt(Mid(temp_bloque, 1, 2)) - 1 To CInt(Mid(temp_bloque, 4)) - 1
-                            temp_arr_horario(k) = "1"
-                        Next
-                        'Dim bloque As String = ""
-                        For k = 0 To temp_arr_horario.Length - 1
-                            bloque = bloque & temp_arr_horario(k)
-                        Next
                     End If
-                    Select Case temp_dia.ToUpper
-                        Case ".LU"
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(22) = bloque
-                        Case ".MA"
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(23) = bloque
-                        Case ".MI"
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(24) = bloque
-                        Case ".JU"
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(25) = bloque
-                        Case ".VI"
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(26) = bloque
-                        Case ".SA"
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(27) = bloque
-                        Case ".DO"
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(28) = bloque
-                        Case Else
-                            dtHorario.Rows(dtHorario.Rows.Count - 1).Item(29) = bloque
-                    End Select
-
-
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(7) = dato.Rows(i).Item(23).ToString & "-" & dato.Rows(i).Item(24).ToString
-
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(2) = dato.Rows(i).Item(8).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(11) = dato.Rows(i).Item(18).ToString
-
-
-
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(0) = DateTime.Now() '.ToShortDateString()
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(1) = dato.Rows(i).Item(21).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(3) = dato.Rows(i).Item(6).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(4) = dato.Rows(i).Item(9).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(5) = dato.Rows(i).Item(10).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(6) = dato.Rows(i).Item(11).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(8) = dato.Rows(i).Item(7).ToString
-                    Dim numero As String = ""
-
-                    If dato.Rows(i).Item(5).ToString = "" Then
-                        numero = "000"
-                    Else
-                        If CInt(dato.Rows(i).Item(5).ToString) >= 10 And CInt(dato.Rows(i).Item(5).ToString) < 100 Then
-                            numero = "0" & dato.Rows(i).Item(5).ToString
-                        ElseIf CInt(dato.Rows(i).Item(5).ToString) < 10 Then
-                            numero = "00" & dato.Rows(i).Item(5).ToString
-                        ElseIf CInt(dato.Rows(i).Item(5).ToString) >= 100 Then
-                            numero = dato.Rows(i).Item(5).ToString
-
-                        End If
-                    End If
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(9) = dato.Rows(i).Item(4).ToString & numero
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(10) = dato.Rows(i).Item(3).ToString
-                    'Dim tempnrc = dato.Rows(i).Item(8).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(12) = dato.Rows(i).Item(1).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(13) = dato.Rows(i).Item(14).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(14) = dato.Rows(i).Item(19).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(15) = dato.Rows(i).Item(2).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(16) = dato.Rows(i).Item(33).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(17) = dato.Rows(i).Item(34).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(18) = dato.Rows(i).Item(16).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(19) = "D"
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(20) = dato.Rows(i).Item(26).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(21) = dato.Rows(i).Item(29).ToString
-                    dtHorario.Rows(dtHorario.Rows.Count - 1).Item(31) = dato.Rows(i).Item(30).ToString
 
                 End If
 
-            End If
 
+            End If
 1:
 
         Next
@@ -1353,17 +1432,17 @@ Public Class ImportarHorario
         If Jornada = "VESPERTINO" Then
 1:
 
-            If 1800 < CInt(inicio) And CInt(inicio) <= 1900 Then 'inicio = "1900" Then
+            If (inicio) = 1900 Then 'inicio = "1900" Then
                 modulo = "15-"
-            ElseIf 1900 < CInt(inicio) And CInt(inicio) <= 1946 Then 'inicio = "1946" Then
+            ElseIf CInt(inicio) = 1946 Then 'inicio = "1946" Then
                 modulo = "16-"
-            ElseIf 1946 < CInt(inicio) And CInt(inicio) <= 2040 Then ' inicio = "2040" Then
+            ElseIf CInt(inicio) = 2040 Then ' inicio = "2040" Then
                 modulo = "17-"
-            ElseIf 2040 < CInt(inicio) And CInt(inicio) <= 2126 Then 'inicio = "2126" Then
+            ElseIf CInt(inicio) = 2126 Then 'inicio = "2126" Then
                 modulo = "18-"
-            ElseIf 2126 < CInt(inicio) And CInt(inicio) <= 2220 Then 'inicio = "2220" Then
+            ElseIf CInt(inicio) = 2220 Then 'inicio = "2220" Then
                 modulo = "19-"
-            ElseIf 2220 < CInt(inicio) And CInt(inicio) <= 2306 Then 'inicio = "2306" Then
+            ElseIf CInt(inicio) = 2306 Then 'inicio = "2306" Then
                 modulo = "20-"
                 'Else
                 '    modulo = "Error"
@@ -1376,18 +1455,18 @@ Public Class ImportarHorario
             End If
 
 
-            If 1845 < CInt(fin) And CInt(fin) <= 1945 Then 'fin = "1945" Then
+            If CInt(fin) = 1945 Then 'fin = "1945" Then
                 modulo = modulo & "15"
 
-            ElseIf 1945 < CInt(fin) And CInt(fin) <= 2030 Then ' fin = "2030" Then
+            ElseIf CInt(fin) = 2030 Then ' fin = "2030" Then
                 modulo = modulo & "16"
-            ElseIf 2030 < CInt(fin) And CInt(fin) <= 2125 Then 'fin = "2125" Then
+            ElseIf CInt(fin) = 2125 Then 'fin = "2125" Then
                 modulo = modulo & "17"
-            ElseIf 2125 < CInt(fin) And CInt(fin) <= 2210 Then 'fin = "2210" Then
+            ElseIf CInt(fin) = 2210 Then 'fin = "2210" Then
                 modulo = modulo & "18"
-            ElseIf 2210 < CInt(fin) And CInt(fin) <= 2305 Then 'fin = "2305" Then
+            ElseIf CInt(fin) = 2305 Then 'fin = "2305" Then
                 modulo = modulo & "19"
-            ElseIf 2305 < CInt(fin) And CInt(fin) <= 2350 Then 'fin = "2350" Then
+            ElseIf CInt(fin) = 2350 Then 'fin = "2350" Then
                 modulo = modulo & "20"
             Else
                 If flag Then 'para que no se quede dando vueltas infinitas

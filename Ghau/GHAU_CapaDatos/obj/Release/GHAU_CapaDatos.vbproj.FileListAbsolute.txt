@@ -43,3 +43,21 @@ C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHA
 C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.dll
 C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.xml
 C:\Users\Sprenger\Dropbox\Taller II\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\bin\Release\GHAU_CapaDatos.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\bin\Release\GHAU_CapaDatos.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\bin\Release\GHAU_CapaDatos.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Release\ResolveAssemblyReference.cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.Resources.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.vbproj.GenerateResource.Cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Hans\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\bin\Release\GHAU_CapaDatos.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\bin\Release\GHAU_CapaDatos.pdb
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\bin\Release\GHAU_CapaDatos.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Release\ResolveAssemblyReference.cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.Resources.resources
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.vbproj.GenerateResource.Cache
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.dll
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.xml
+C:\Users\FGM\Dropbox\Hans Molina Fleming\Verano2015\GHAU\Israel\GHAU_CapaDatos\obj\Release\GHAU_CapaDatos.pdb

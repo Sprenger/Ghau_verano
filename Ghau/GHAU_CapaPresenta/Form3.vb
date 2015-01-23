@@ -2,6 +2,8 @@
 Imports GHAU_CapaDatos.BaseDato
 Imports GHAU_CapaNegocio.Negocio
 Imports GHAU_CapaNegocio.VariablesFijas
+Imports System.Data.SqlClient
+
 Public Class Form3
 
     Public nombre_servidor, usuario, pass As String
@@ -17,6 +19,7 @@ Public Class Form3
     Public dtprogramas As DataTable = dthorario.consultarprogramas
     Public dtunidaesAcademicas As DataTable = dthorario.consultarunidadesacademicas
     Public Dt_eventos As DataTable
+    Public dt_liberar As DataTable
     Public dtevento As DataTable
     Private Sub Form3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cargar_form3()
@@ -25,30 +28,92 @@ Public Class Form3
     Dim DIASELECCIONADO As String
     Dim dtGrilla As DataTable
     Public Sub cargar(ByVal dia As String, ByVal FORZADO As Boolean)
+        Dim liberar As New GHAU_CapaNegocio.Eventos
+        Dim Cdia As New GHAU_CapaNegocio.funciones
+
+        Dim liberta As DataTable = liberar.recorrer_l(Cdia.conversordia(dia), FormatDateTime(Mes.SelectionStart, DateFormat.ShortDate))
         If Not DIASELECCIONADO = dia Or FORZADO Then
             Dim dtfijo As DataTable = grilla_horario.Copy
+
             Dim dt = datatable.horario(dia, FormatDateTime(Mes.SelectionStart, DateFormat.ShortDate))
+         
+            'Dim dato2 As String = dato3.ToString("yyyy,MM,dd")
             dtGrilla = datatable.MaatchHorario(dtfijo, dt)
             GRILLA_MOSTRAR.DataSource = dtGrilla.Copy
             GRILLA_MOSTRAR.Columns(0).Frozen = True
             GRILLA_MOSTRAR.Columns(1).Frozen = True
+
+
             For i = 0 To GRILLA_MOSTRAR.RowCount - 1
                 For j = 1 To GRILLA_MOSTRAR.ColumnCount - 1
                     If InStr(GRILLA_MOSTRAR.Rows(i).Cells(j).Value.ToString, "++") > 0 Then
-                        'Dim c = Replace(GRILLA_MOSTRAR.Rows(i).Cells(j).Value, "/", vbNewLine)
                         GRILLA_MOSTRAR.Rows(i).Cells(j).ToolTipText = Replace(GRILLA_MOSTRAR.Rows(i).Cells(j).Value.ToString.ToUpper, "++", vbNewLine)
                         Dim DATOS = Split(GRILLA_MOSTRAR.Rows(i).Cells(j).Value.ToString.ToUpper, "++")
-                        GRILLA_MOSTRAR.Rows(i).Cells(j).Value = DATOS(0) 'Replace(GRILLA_MOSTRAR.Rows(i).Cells(j).Value, "/", vbNewLine)
+                        'If liberta.Rows.Count > 0 Then
 
+                        '    If liberar.liberando(liberta, dt) = True Then
+
+                        '        Dim Liberado As String = "LIBERADO"
+                        '        GRILLA_MOSTRAR.Rows(i).Cells(j).Value = Liberado
+                        '    Else
+                        '        GRILLA_MOSTRAR.Rows(i).Cells(j).Value = DATOS(0)
+                        '    End If
+
+                        'Else
+                        GRILLA_MOSTRAR.Rows(i).Cells(j).Value = DATOS(0)
+                        'End If
                     End If
                     GRILLA_MOSTRAR.ColumnHeadersHeight = 55
                 Next
                 GRILLA_MOSTRAR.Rows(i).Height = 23
             Next
-            DIASELECCIONADO = dia
+        DIASELECCIONADO = dia
+        'libera(dato1, dato2, datos(0))
         End If
+        Dim nrc, ubicacion, bloque As String
+        For i = 0 To liberta.Rows.Count - 1
+            nrc = liberta.Rows(i).Item(0)
+            ubicacion = liberta.Rows(i).Item(7)
+            bloque = liberta.Rows(i).Item(5).ToString.ToArray
+            For j = 0 To bloque.Length - 1
+                If bloque(j) = "1" Then
+                    GRILLA_MOSTRAR.Rows(j).Cells(CInt(ubicacion.ToString) + 1).Value = "LIBERADO"
+                End If
+
+            Next
+        Next
 
     End Sub
+    'Sub libera(ByVal dia As String, ByVal FORZADO As Boolean)
+    '    Dim dato1 = Cdia.conversordia(dia)
+    '    Dim dato2 = FormatDateTime(Mes.SelectionStart, DateFormat.ShortDate)
+    '    Dim consulta As String = "select * from Liberar_sala where nrc='" & datos(0) & "' and dia= " & dato1 & " and @fecha_inicio between fecha_ini and fecha_fin"
+    '    Dim cmd As New SqlCommand
+    '    Dim dt As New DataTable
+    '    conectado()
+    '    Try
+    '        'cnn.Open()
+    '        cmd = New SqlCommand(consulta.ToUpper)
+    '        cmd.Parameters.AddWithValue("@fecha_inicio", Convert.ToDateTime(dato2))
+    '        cmd.CommandType = CommandType.Text
+    '        cmd.Connection = cnn
+
+    '        If cmd.ExecuteNonQuery Then
+
+    '            Dim da As New SqlDataAdapter(cmd)
+    '            da.Fill(dt)
+    '            Return dt
+    '        Else
+    '            Return Nothing
+    '        End If
+    '    Catch ex As Exception
+    '        'MsgBox("Error al mostrar " + ex.Message)
+    '        Return Nothing
+    '    Finally
+    '        desconectado()
+    '    End Try
+    '    Return dt
+    'End Sub
 
     Dim checkednodes As New List(Of TreeNode)()
 
@@ -376,15 +441,25 @@ Public Class Form3
                 End If
             Next
             Dim cms = New ContextMenuStrip
-            If banderaLibre Then 'And contador = (CInt(xfin) - CInt(xinicio)) Then
+            Dim xx = xinicio
+            Dim yy = GRILLA_MOSTRAR.Rows(CInt(xinicio.ToString)).Cells(CInt(yinicio)).ToString
+            Dim f = GRILLA_MOSTRAR.Rows(CInt(xinicio.ToString)).Cells(CInt(yinicio)).ToolTipText
+            Dim bandera2 = Split(f.ToString, vbNewLine)
+
+            If banderaLibre = True And f = "" Then
                 Dim item1 = cms.Items.Add("Agregar Evento")
                 item1.Tag = 1
                 AddHandler item1.Click, AddressOf menuChoice
-            Else
+            ElseIf f <> "" And bandera2(2) <> "EVENTO" And GRILLA_MOSTRAR.Rows(CInt(xinicio)).Cells(CInt(yinicio)).Value.ToString <> "LIBERADO" Then
+                Dim item3 = cms.Items.Add("Liberar")
+                item3.Tag = 3
+                AddHandler item3.Click, AddressOf menuChoice
+            ElseIf f <> " " And bandera2(2) = "EVENTO" Then
                 Dim item2 = cms.Items.Add("Modificar")
                 item2.Tag = 2
                 AddHandler item2.Click, AddressOf menuChoice
-
+            Else
+                MsgBox("Ya se encuentra liberado.")
             End If
 
 
@@ -459,8 +534,10 @@ b:
                 Dt_eventos = dthorario.ConsultaEvento(FormatDateTime(Me.Mes.SelectionStart, DateFormat.LongDate), evento(4).ToString, evento(0).ToString, evento(3).ToString.ToUpper)
 
                 HU3.Show()
-
-
+            Case 3
+                Dim liberar = Split(GRILLA_MOSTRAR.Rows(xinicio).Cells(yinicio).ToolTipText, vbNewLine)
+                dt_liberar = dthorario.consultarLiberar(liberar(0))
+                Liberar_HU23.Show()
         End Select
 
     End Sub
@@ -482,6 +559,7 @@ b:
         Next
         'GRILLA_MOSTRAR.DataSource = grilla_horario
         cargar(Mid(FormatDateTime(Mes.SelectionStart, DateFormat.LongDate), 1, 2).ToUpper, False)
+
 
 
     End Sub

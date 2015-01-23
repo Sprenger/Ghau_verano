@@ -17,6 +17,8 @@
             CB_Sala.Text = datos.Rows(0).Item(8).ToString
             DTP_Inicio.Value = CDate(datos.Rows(0).Item(17).ToString)
             DTP_Termino.Value = CDate(datos.Rows(0).Item(18).ToString)
+            LBL_Bloque.Text = datos.Rows(0).Item(13).ToString
+            LBL_NRC.Text = datos.Rows(0).Item(3).ToString
 
             For i = 0 To datos.Rows.Count - 1
                 If datos.Rows(i).Item(1) = "1" Then
@@ -83,14 +85,19 @@
         'Form3.GRILLA_MOSTRAR.ClearSelection()
         'Me.Close()
 
-
+        eliminar(LBL_NRC.Text)
         Crear()
-
+        GHAU_CapaPresenta.Form3.cargar((FormatDateTime(Form3.Mes.SelectionStart, DateFormat.LongDate)), True)
+        Me.Close()
 
 
 
     End Sub
     Private CB_dias As String
+    Sub eliminar(ByVal nrc As String)
+        Dim EVENTO_ELIMINAR As New GHAU_CapaNegocio.Eventos
+        EVENTO_ELIMINAR.eliminarEvento(nrc)
+    End Sub
     Private Sub CB_Lunes_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CB_Lunes.CheckedChanged
         If CB_Lunes.Checked = True Then
             If CB_dias = "" Then
@@ -193,15 +200,57 @@
 
         If TXT_nombre_actividad.Text <> "" Then
             Dim ingresar As New GHAU_CapaNegocio.Eventos
+            Dim tep_dia As String = " en los dias "
+            Dim bandera_Lunes As Boolean = True
+            Dim bandera_Ma As Boolean = True
+            Dim bandera_Mi As Boolean = True
+            Dim bandera_Ju As Boolean = True
+
+            Dim bandera_vi As Boolean = True
+            Dim bandera_sa As Boolean = True
+            Dim bandera_do As Boolean = True
+
 
             Dim consu = ingresar.consultarExiste(LBL_Bloque.Text, CB_Sala.Text, Mid(CB_dias, 1, CB_dias.Length - 3) & ")")
-            If consu.Rows.Count > 0 Then
-                Dim result As Integer = MessageBox.Show("Hay Choque con otros horarios, " & vbNewLine & "Desea agregar de todos modos?, esto creara choque de horarios", "caption", MessageBoxButtons.YesNo)
+            If Not consu Is Nothing Then
+                For i = 0 To consu.Rows.Count - 1
+                    If consu.Rows(i).Item(1).ToString = "1" And bandera_Lunes Then
+                        tep_dia = tep_dia & " LUNES " & ", "
+                        bandera_Lunes = False
+
+                    ElseIf consu.Rows(i).Item(1).ToString = "2" And bandera_Ma Then
+                        tep_dia = tep_dia & " MARTES " & ", "
+                        bandera_Ma = False
+                    ElseIf consu.Rows(i).Item(1).ToString = "3" And bandera_Mi Then
+                        tep_dia = tep_dia & " MIERCOLES " & ", "
+                        bandera_Mi = False
+
+                    ElseIf consu.Rows(i).Item(1).ToString = "4" And bandera_Ju Then
+                        tep_dia = tep_dia & " JUEVES " & ", "
+                        bandera_Ju = False
+
+                    ElseIf consu.Rows(i).Item(1).ToString = "5" And bandera_vi Then
+                        tep_dia = tep_dia & " VIERNES " & ", "
+                        bandera_vi = False
+
+                    ElseIf consu.Rows(i).Item(1).ToString = "6" And bandera_sa Then
+                        tep_dia = tep_dia & " SABADO " & ", "
+                        bandera_sa = False
+
+                    ElseIf consu.Rows(i).Item(1).ToString = "7" And bandera_do Then
+                        tep_dia = tep_dia & " DOMINGO " & ", "
+                        bandera_Mi = False
+                    Else
+
+                    End If
+                Next
+                tep_dia = Mid(tep_dia, 1, tep_dia.Length - 2)
+                Dim result As Integer = MessageBox.Show("Hay Choque" & tep_dia & vbNewLine & "Desea agregar de todos modos?, esto creara choque de horarios", "caption", MessageBoxButtons.YesNo)
                 If result = DialogResult.No Then
                     GoTo 3
                 ElseIf result = DialogResult.Yes Then
 
-
+4:
 
                     Dim dt_Sala As New GHAU_CapaDatos.Salas
 
@@ -260,9 +309,16 @@
 
                 End If
             Else
+                Dim eliminar As New GHAU_CapaNegocio.Eventos
+                eliminar.eliminarEvento(LBL_NRC.Text)
+
+                GoTo 4
+
 2:
             End If
+            GHAU_CapaPresenta.Form3.cargar((FormatDateTime(Form3.Mes.SelectionStart, DateFormat.LongDate)), True)
             Me.Close()
+
 3:
 
 
@@ -293,21 +349,24 @@
 
     Private Sub BTN_Eliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BTN_Eliminar.Click
 
-        Dim eliminar As New GHAU_CapaNegocio.Negocio
-        eliminar.Eliminarevento(Form3.GRILLA_MOSTRAR.Rows(Form3.xinicio).Cells(Form3.yfin).Value)
-        'CStr(Me.DTP_Inicio.Value)
-        'Dim temp_arr_horario() As Char = Form3.dtevento.Rows(0).Item(0).ToString.ToCharArray
-        Dim a = Form3.GRILLA_MOSTRAR.Rows(CInt(Form3.xinicio)).Cells(CInt(Form3.yinicio)).ToolTipText
-        For I = 0 To Form3.GRILLA_MOSTRAR.Rows.Count - 1
-            If Form3.GRILLA_MOSTRAR.Rows(I).Cells(CInt(Form3.yinicio)).Value = Form3.GRILLA_MOSTRAR.Rows(CInt(Form3.xinicio)).Cells(CInt(Form3.yinicio)).Value Then
-                Form3.GRILLA_MOSTRAR.Rows(I).Cells(CInt(Form3.yinicio)).Value = " "
-                Form3.GRILLA_MOSTRAR.Rows(I).Cells(CInt(Form3.yinicio)).ToolTipText = " "
+        'Dim eliminar As New GHAU_CapaNegocio.Negocio
+        'eliminar.Eliminarevento(Form3.GRILLA_MOSTRAR.Rows(Form3.xinicio).Cells(Form3.yfin).Value)
+        ''CStr(Me.DTP_Inicio.Value)
+        ''Dim temp_arr_horario() As Char = Form3.dtevento.Rows(0).Item(0).ToString.ToCharArray
+        'Dim a = Form3.GRILLA_MOSTRAR.Rows(CInt(Form3.xinicio)).Cells(CInt(Form3.yinicio)).ToolTipText
+        'For I = 0 To Form3.GRILLA_MOSTRAR.Rows.Count - 1
+        '    If Form3.GRILLA_MOSTRAR.Rows(I).Cells(CInt(Form3.yinicio)).Value = Form3.GRILLA_MOSTRAR.Rows(CInt(Form3.xinicio)).Cells(CInt(Form3.yinicio)).Value Then
+        '        Form3.GRILLA_MOSTRAR.Rows(I).Cells(CInt(Form3.yinicio)).Value = " "
+        '        Form3.GRILLA_MOSTRAR.Rows(I).Cells(CInt(Form3.yinicio)).ToolTipText = " "
 
-            End If
-           
-        Next
-        Form3.GRILLA_MOSTRAR.ClearSelection()
+        '    End If
+
+        'Next
+        'Form3.GRILLA_MOSTRAR.ClearSelection()
+        'Me.Close()
+
+        eliminar(LBL_NRC.Text)
+        GHAU_CapaPresenta.Form3.cargar((FormatDateTime(Form3.Mes.SelectionStart, DateFormat.LongDate)), True)
         Me.Close()
-
     End Sub
 End Class

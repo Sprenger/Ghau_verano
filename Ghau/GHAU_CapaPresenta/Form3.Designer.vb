@@ -353,7 +353,7 @@ Partial Class Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1222, 518)
+        Me.ClientSize = New System.Drawing.Size(1222, 517)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.GRILLA_MOSTRAR)
         Me.Controls.Add(Me.ToolStrip1)
