@@ -15,9 +15,6 @@ Public Class ImportarHorario
 
     End Sub
     Sub abrir()
-
-        Grilla_Excel.Size = New System.Drawing.Size(916, 378)
-        Grilla_error.Visible = False
         Dim openFileDialog1 As New OpenFileDialog
         Grilla_Ex.DataSource = Nothing
         Dim fichero = Environment.GetEnvironmentVariable("windir") 'Busca en que disco esta a carpeta de windows
@@ -28,9 +25,7 @@ Public Class ImportarHorario
         'Si se presiona abrir entonces...
         If openFileDialog1.ShowDialog() = Windows.Forms.DialogResult.OK Then
             Txt_Ruta.Text = openFileDialog1.FileName
-            '_GRILLA_ = dt.LLENADOgrilla(Txt_Ruta.Text)
             _GRILLA_ = dt.LLENADOgrilla(Txt_Ruta.Text)
-            '  Dim k = CDate(_GRILLA_.Rows(0).Item(33).ToString)
 
 
 
@@ -83,7 +78,7 @@ Public Class ImportarHorario
                 Grilla_error.Visible = True
                 Grilla_error.DataSource = dtvalidar
                 Grilla_error.AutoSizeColumnsMode = DataGridViewAutoSizeColumnMode.AllCells
-                '    'Dim dterrores As DataTable = dt2.Ingreso(_GRILLA_)
+                Dim dterrores As DataTable = dt2.Ingreso(_GRILLA_)
             End If
         Catch
         End Try

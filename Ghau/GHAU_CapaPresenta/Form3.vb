@@ -441,8 +441,6 @@ Public Class Form3
                 End If
             Next
             Dim cms = New ContextMenuStrip
-            Dim xx = xinicio
-            Dim yy = GRILLA_MOSTRAR.Rows(CInt(xinicio.ToString)).Cells(CInt(yinicio)).ToString
             Dim f = GRILLA_MOSTRAR.Rows(CInt(xinicio.ToString)).Cells(CInt(yinicio)).ToolTipText
             Dim bandera2 = Split(f.ToString, vbNewLine)
 
@@ -454,12 +452,12 @@ Public Class Form3
                 Dim item3 = cms.Items.Add("Liberar")
                 item3.Tag = 3
                 AddHandler item3.Click, AddressOf menuChoice
-            ElseIf f <> " " And bandera2(2) = "EVENTO" Then
+            ElseIf f <> "" And bandera2(2) = "EVENTO" Then
                 Dim item2 = cms.Items.Add("Modificar")
                 item2.Tag = 2
                 AddHandler item2.Click, AddressOf menuChoice
             Else
-                MsgBox("Ya se encuentra liberado.")
+                MsgBox("ya se encuentra liberado.")
             End If
 
 

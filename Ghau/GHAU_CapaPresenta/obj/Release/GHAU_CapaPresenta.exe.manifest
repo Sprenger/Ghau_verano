@@ -89,19 +89,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>0LxsvFhoFVgtsAtkpZn8+xnh8FE=</dsig:DigestValue>
+        <dsig:DigestValue>fn6SdwUh80y/R3sv1djfMfGgkCc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaNegocio.dll" size="82432">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GHAU_CapaNegocio.dll" size="78848">
       <assemblyIdentity name="GHAU_CapaNegocio" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>WmLP4nKLSTRKnMqbXh/2iIVgRMw=</dsig:DigestValue>
+        <dsig:DigestValue>AARUkchE+S1MOXockySSfu3btTE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -113,7 +113,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>h8Q1u9C6K2NZEz63K4lcEpTrcuc=</dsig:DigestValue>
+        <dsig:DigestValue>Zuin9f3/4EoEqaYHRiKYgFH/x9I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
